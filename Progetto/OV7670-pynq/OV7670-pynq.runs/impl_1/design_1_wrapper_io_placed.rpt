@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date                      : Thu Apr 25 15:03:51 2024
+| Date                      : Thu Apr 25 16:29:33 2024
 | Host                      : adrian running 64-bit Ubuntu 20.04.6 LTS
 | Command                   : report_io -file design_1_wrapper_io_placed.rpt
 | Design                    : design_1_wrapper
@@ -403,7 +403,7 @@ Table of Contents
 | W6         |                   | High Range | IO_L22N_T3_13           | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | W7         |                   | High Range | VCCO_13                 | VCCO        |                   |      13 |            |      |                     |                      |    2.50 |            |           |          |      |                  |              |                   |              |
 | W8         |                   | High Range | IO_L15N_T2_DQS_13       | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| W9         | PWM_OUT           | High Range | IO_L16N_T2_13           | OUTPUT      | LVCMOS25          |      13 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| W9         | PWM_0             | High Range | IO_L16N_T2_13           | OUTPUT      | LVCMOS25          |      13 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | W10        |                   | High Range | IO_L16P_T2_13           | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | W11        |                   | High Range | IO_L18P_T2_13           | User IO     |                   |      13 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | W12        |                   |            | GND                     | GND         |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |

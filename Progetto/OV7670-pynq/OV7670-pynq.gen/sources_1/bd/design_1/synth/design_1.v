@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-//Date        : Thu Apr 25 15:00:05 2024
+//Date        : Thu Apr 25 16:26:17 2024
 //Host        : adrian running 64-bit Ubuntu 20.04.6 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -753,7 +753,7 @@ module design_1
     IIC_sda_t,
     OV7670_RESET,
     PCLK,
-    PWM_OUT,
+    PWM_0,
     TMDS_Clk_n,
     TMDS_Clk_p,
     TMDS_Data_n,
@@ -793,7 +793,7 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC SDA_T" *) output IIC_sda_t;
   output [0:0]OV7670_RESET;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.PCLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.PCLK, CLK_DOMAIN design_1_PCLK, FREQ_HZ 24000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) input PCLK;
-  output PWM_OUT;
+  output PWM_0;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.TMDS_CLK_N CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.TMDS_CLK_N, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) output TMDS_Clk_n;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.TMDS_CLK_P CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.TMDS_CLK_P, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) output TMDS_Clk_p;
   output [2:0]TMDS_Data_n;
@@ -1051,7 +1051,7 @@ module design_1
   assign IIC_sda_o = axi_iic_0_IIC_SDA_O;
   assign IIC_sda_t = axi_iic_0_IIC_SDA_T;
   assign OV7670_RESET[0] = axi_gpio_0_gpio_io_o;
-  assign PWM_OUT = PWM_Kotha_v1_0_0_PWM;
+  assign PWM_0 = PWM_Kotha_v1_0_0_PWM;
   assign TMDS_Clk_n = AXI2DVI_TMDS_Clk_n_0;
   assign TMDS_Clk_p = AXI2DVI_TMDS_Clk_p_0;
   assign TMDS_Data_n[2:0] = AXI2DVI_TMDS_Data_n_0;

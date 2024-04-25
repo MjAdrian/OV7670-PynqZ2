@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xE663F592E211F21E",
+      "boundary_crc": "0xE7AF876BA52E1692",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../OV7670-pynq.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -447,7 +447,7 @@
           }
         }
       },
-      "PWM_OUT": {
+      "PWM_0": {
         "direction": "O"
       }
     },
@@ -4273,7 +4273,7 @@
       "PWM_Kotha_v1_0_0_PWM": {
         "ports": [
           "PWM_Kotha_v1_0_0/PWM",
-          "PWM_OUT"
+          "PWM_0"
         ]
       },
       "Reset_peripheral_aresetn_48M": {

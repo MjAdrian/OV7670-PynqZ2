@@ -112,4 +112,4 @@ set_property PACKAGE_PIN Y17 [get_ports {data_in[6]}]
 set_property src_info {type:XDC file:1 line:74 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W19 [get_ports {data_in[7]}]
 set_property src_info {type:XDC file:1 line:85 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN W9 IOSTANDARD LVCMOS25} [get_ports {PWM_OUT}];
+set_property -dict {PACKAGE_PIN W9 IOSTANDARD LVCMOS25} [get_ports {PWM_0}];

@@ -82,4 +82,4 @@ set_property IOSTANDARD LVCMOS25 [get_ports {data_in[1]}]
 set_property IOSTANDARD LVCMOS25 [get_ports {data_in[0]}]
 
 
-set_property -dict {PACKAGE_PIN W9 IOSTANDARD LVCMOS25} [get_ports {PWM_OUT}];
+set_property -dict {PACKAGE_PIN W9 IOSTANDARD LVCMOS25} [get_ports {PWM_0}];

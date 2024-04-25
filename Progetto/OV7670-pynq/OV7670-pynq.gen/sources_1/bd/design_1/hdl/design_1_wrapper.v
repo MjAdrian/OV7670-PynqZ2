@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-//Date        : Thu Apr 25 15:00:05 2024
+//Date        : Thu Apr 25 16:26:17 2024
 //Host        : adrian running 64-bit Ubuntu 20.04.6 LTS
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -36,7 +36,7 @@ module design_1_wrapper
     IIC_sda_io,
     OV7670_RESET,
     PCLK,
-    PWM_OUT,
+    PWM_0,
     TMDS_Clk_n,
     TMDS_Clk_p,
     TMDS_Data_n,
@@ -72,7 +72,7 @@ module design_1_wrapper
   inout IIC_sda_io;
   output [0:0]OV7670_RESET;
   input PCLK;
-  output PWM_OUT;
+  output PWM_0;
   output TMDS_Clk_n;
   output TMDS_Clk_p;
   output [2:0]TMDS_Data_n;
@@ -115,7 +115,7 @@ module design_1_wrapper
   wire IIC_sda_t;
   wire [0:0]OV7670_RESET;
   wire PCLK;
-  wire PWM_OUT;
+  wire PWM_0;
   wire TMDS_Clk_n;
   wire TMDS_Clk_p;
   wire [2:0]TMDS_Data_n;
@@ -167,7 +167,7 @@ module design_1_wrapper
         .IIC_sda_t(IIC_sda_t),
         .OV7670_RESET(OV7670_RESET),
         .PCLK(PCLK),
-        .PWM_OUT(PWM_OUT),
+        .PWM_0(PWM_0),
         .TMDS_Clk_n(TMDS_Clk_n),
         .TMDS_Clk_p(TMDS_Clk_p),
         .TMDS_Data_n(TMDS_Data_n),
