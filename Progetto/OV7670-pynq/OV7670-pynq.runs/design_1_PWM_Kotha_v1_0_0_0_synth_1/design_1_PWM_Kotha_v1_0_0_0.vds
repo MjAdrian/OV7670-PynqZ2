@@ -1,0 +1,311 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Apr 25 15:00:17 2024
+# Process ID: 38527
+# Current directory: /home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_PWM_Kotha_v1_0_0_0_synth_1
+# Command line: vivado -log design_1_PWM_Kotha_v1_0_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_PWM_Kotha_v1_0_0_0.tcl
+# Log file: /home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_PWM_Kotha_v1_0_0_0_synth_1/design_1_PWM_Kotha_v1_0_0_0.vds
+# Journal file: /home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_PWM_Kotha_v1_0_0_0_synth_1/vivado.jou
+# Running On: adrian, OS: Linux, CPU Frequency: 2800.000 MHz, CPU Physical cores: 4, Host memory: 16477 MB
+#-----------------------------------------------------------
+source design_1_PWM_Kotha_v1_0_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1354.961 ; gain = 0.023 ; free physical = 174 ; free virtual = 10847
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/vivado-library-master'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/HLS'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/PWM_Kotha_1.0/src'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/adrian/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_PWM_Kotha_v1_0_0_0
+Command: synth_design -top design_1_PWM_Kotha_v1_0_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 38597
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2119.934 ; gain = 402.629 ; free physical = 167 ; free virtual = 8759
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_PWM_Kotha_v1_0_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_PWM_Kotha_v1_0_0_0/synth/design_1_PWM_Kotha_v1_0_0_0.vhd:83]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'PWM_Kotha_v1_0' declared at '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/22c5/PWM_Kotha_v1_0.vhd:5' bound to instance 'U0' of component 'PWM_Kotha_v1_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_PWM_Kotha_v1_0_0_0/synth/design_1_PWM_Kotha_v1_0_0_0.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'PWM_Kotha_v1_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/22c5/PWM_Kotha_v1_0.vhd:49]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'PWM_Kotha_v1_0_S00_AXI' declared at '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/22c5/PWM_Kotha_v1_0_S00_AXI.vhd:5' bound to instance 'PWM_Kotha_v1_0_S00_AXI_inst' of component 'PWM_Kotha_v1_0_S00_AXI' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/22c5/PWM_Kotha_v1_0.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'PWM_Kotha_v1_0_S00_AXI' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/22c5/PWM_Kotha_v1_0_S00_AXI.vhd:85]
+INFO: [Synth 8-226] default block is never used [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/22c5/PWM_Kotha_v1_0_S00_AXI.vhd:251]
+INFO: [Synth 8-226] default block is never used [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/22c5/PWM_Kotha_v1_0_S00_AXI.vhd:382]
+WARNING: [Synth 8-614] signal 'count_temp' is read in the process but is not in the sensitivity list [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/22c5/PWM_Kotha_v1_0_S00_AXI.vhd:376]
+INFO: [Synth 8-3491] module 'clock' declared at '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/22c5/clock.vhd:36' bound to instance 'CLK' of component 'clock' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/22c5/PWM_Kotha_v1_0_S00_AXI.vhd:417]
+INFO: [Synth 8-638] synthesizing module 'clock' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/22c5/clock.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'clock' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/22c5/clock.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'PWM_Kotha_v1_0_S00_AXI' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/22c5/PWM_Kotha_v1_0_S00_AXI.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'PWM_Kotha_v1_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/22c5/PWM_Kotha_v1_0.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'design_1_PWM_Kotha_v1_0_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_PWM_Kotha_v1_0_0_0/synth/design_1_PWM_Kotha_v1_0_0_0.vhd:83]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/22c5/PWM_Kotha_v1_0_S00_AXI.vhd:244]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/22c5/PWM_Kotha_v1_0_S00_AXI.vhd:247]
+WARNING: [Synth 8-7129] Port reset in module clock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module PWM_Kotha_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module PWM_Kotha_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module PWM_Kotha_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module PWM_Kotha_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module PWM_Kotha_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module PWM_Kotha_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2209.871 ; gain = 492.566 ; free physical = 167 ; free virtual = 8648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2224.715 ; gain = 507.410 ; free physical = 164 ; free virtual = 8645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2224.715 ; gain = 507.410 ; free physical = 164 ; free virtual = 8645
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2224.715 ; gain = 0.000 ; free physical = 163 ; free virtual = 8644
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2376.465 ; gain = 0.000 ; free physical = 170 ; free virtual = 8539
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2376.500 ; gain = 0.000 ; free physical = 168 ; free virtual = 8538
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2376.500 ; gain = 659.195 ; free physical = 174 ; free virtual = 8434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2376.500 ; gain = 659.195 ; free physical = 174 ; free virtual = 8434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2376.500 ; gain = 659.195 ; free physical = 174 ; free virtual = 8434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2376.500 ; gain = 659.195 ; free physical = 168 ; free virtual = 8429
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   4 Input   32 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0, operation Mode is: A*B.
+DSP Report: operator U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0 is absorbed into DSP U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0.
+DSP Report: operator U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0 is absorbed into DSP U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0.
+DSP Report: Generating DSP U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0 is absorbed into DSP U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0.
+DSP Report: operator U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0 is absorbed into DSP U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0.
+DSP Report: Generating DSP U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0, operation Mode is: A*B.
+DSP Report: operator U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0 is absorbed into DSP U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0.
+DSP Report: operator U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0 is absorbed into DSP U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0.
+DSP Report: Generating DSP U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0 is absorbed into DSP U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0.
+DSP Report: operator U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0 is absorbed into DSP U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0.
+WARNING: [Synth 8-7129] Port s00_axi_awprot[2] in module design_1_PWM_Kotha_v1_0_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[1] in module design_1_PWM_Kotha_v1_0_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[0] in module design_1_PWM_Kotha_v1_0_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module design_1_PWM_Kotha_v1_0_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module design_1_PWM_Kotha_v1_0_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module design_1_PWM_Kotha_v1_0_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2376.500 ; gain = 659.195 ; free physical = 197 ; free virtual = 8393
+---------------------------------------------------------------------------------
+ Sort Area is  U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0_0 : 0 0 : 3101 5879 : Used 1 time 0
+ Sort Area is  U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0_0 : 0 1 : 2778 5879 : Used 1 time 0
+ Sort Area is  U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0_3 : 0 0 : 2759 5418 : Used 1 time 0
+ Sort Area is  U0/PWM_Kotha_v1_0_S00_AXI_inst/CLK/dcc_filler0_3 : 0 1 : 2659 5418 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++----------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                 | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|design_1_PWM_Kotha_v1_0_0_0 | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_PWM_Kotha_v1_0_0_0 | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_PWM_Kotha_v1_0_0_0 | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_PWM_Kotha_v1_0_0_0 | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++----------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2376.500 ; gain = 659.195 ; free physical = 187 ; free virtual = 8383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2376.500 ; gain = 659.195 ; free physical = 187 ; free virtual = 8383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2376.500 ; gain = 659.195 ; free physical = 187 ; free virtual = 8383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2376.500 ; gain = 659.195 ; free physical = 478 ; free virtual = 8675
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2376.500 ; gain = 659.195 ; free physical = 478 ; free virtual = 8675
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2376.500 ; gain = 659.195 ; free physical = 468 ; free virtual = 8665
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2376.500 ; gain = 659.195 ; free physical = 468 ; free virtual = 8665
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2376.500 ; gain = 659.195 ; free physical = 468 ; free virtual = 8665
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2376.500 ; gain = 659.195 ; free physical = 468 ; free virtual = 8665
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                 | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|design_1_PWM_Kotha_v1_0_0_0 | A*B          | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_PWM_Kotha_v1_0_0_0 | PCIN>>17+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_PWM_Kotha_v1_0_0_0 | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_PWM_Kotha_v1_0_0_0 | PCIN>>17+A*B | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++----------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   310|
+|2     |DSP48E1 |     4|
+|3     |LUT1    |    26|
+|4     |LUT2    |   288|
+|5     |LUT3    |   698|
+|6     |LUT4    |   488|
+|7     |LUT5    |   230|
+|8     |LUT6    |   416|
+|9     |FDRE    |   136|
+|10    |FDSE    |     4|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2376.500 ; gain = 659.195 ; free physical = 468 ; free virtual = 8665
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2376.500 ; gain = 507.410 ; free physical = 457 ; free virtual = 8653
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2376.500 ; gain = 659.195 ; free physical = 461 ; free virtual = 8656
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2376.500 ; gain = 0.000 ; free physical = 741 ; free virtual = 8937
+INFO: [Netlist 29-17] Analyzing 314 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_PWM_Kotha_v1_0_0_0' is not ideal for floorplanning, since the cellview 'clock' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2376.500 ; gain = 0.000 ; free physical = 735 ; free virtual = 8932
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7baad36d
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:31 . Memory (MB): peak = 2376.500 ; gain = 1009.664 ; free physical = 743 ; free virtual = 8940
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1837.559; main = 1536.736; forked = 346.207
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3333.617; main = 2376.469; forked = 989.164
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2400.477 ; gain = 0.000 ; free physical = 740 ; free virtual = 8937
+INFO: [Common 17-1381] The checkpoint '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_PWM_Kotha_v1_0_0_0_synth_1/design_1_PWM_Kotha_v1_0_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_PWM_Kotha_v1_0_0_0, cache-ID = 5ac4aa5b2341ff00
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2400.477 ; gain = 0.000 ; free physical = 737 ; free virtual = 8936
+INFO: [Common 17-1381] The checkpoint '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_PWM_Kotha_v1_0_0_0_synth_1/design_1_PWM_Kotha_v1_0_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_PWM_Kotha_v1_0_0_0_utilization_synth.rpt -pb design_1_PWM_Kotha_v1_0_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 25 15:00:59 2024...

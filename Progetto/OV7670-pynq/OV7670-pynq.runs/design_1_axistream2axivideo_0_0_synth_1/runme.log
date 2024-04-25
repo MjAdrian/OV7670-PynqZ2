@@ -1,0 +1,255 @@
+
+*** Running vivado
+    with args -log design_1_axistream2axivideo_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axistream2axivideo_0_0.tcl
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_axistream2axivideo_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1345.441 ; gain = 0.023 ; free physical = 4428 ; free virtual = 9335
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/vivado-library-master'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/HLS'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/adrian/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axistream2axivideo_0_0
+Command: synth_design -top design_1_axistream2axivideo_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 51308
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2120.320 ; gain = 404.598 ; free physical = 2568 ; free virtual = 7487
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_axistream2axivideo_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_axistream2axivideo_0_0/synth/design_1_axistream2axivideo_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axistream2axivideo' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/47f5/hdl/verilog/axistream2axivideo.v:10]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/47f5/hdl/verilog/axistream2axivideo.v:937]
+INFO: [Synth 8-6155] done synthesizing module 'axistream2axivideo' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/47f5/hdl/verilog/axistream2axivideo.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axistream2axivideo_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_axistream2axivideo_0_0/synth/design_1_axistream2axivideo_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element outStream_V_dest_V_1_sel_rd_reg was removed.  [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/47f5/hdl/verilog/axistream2axivideo.v:332]
+WARNING: [Synth 8-6014] Unused sequential element outStream_V_id_V_1_sel_rd_reg was removed.  [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/47f5/hdl/verilog/axistream2axivideo.v:358]
+WARNING: [Synth 8-6014] Unused sequential element outStream_V_keep_V_1_sel_rd_reg was removed.  [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/47f5/hdl/verilog/axistream2axivideo.v:384]
+WARNING: [Synth 8-6014] Unused sequential element outStream_V_strb_V_1_sel_rd_reg was removed.  [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/47f5/hdl/verilog/axistream2axivideo.v:446]
+WARNING: [Synth 8-7129] Port inStream_TKEEP[0] in module axistream2axivideo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TSTRB[0] in module axistream2axivideo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TUSER[0] in module axistream2axivideo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TLAST[0] in module axistream2axivideo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TID[0] in module axistream2axivideo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDEST[0] in module axistream2axivideo is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2211.289 ; gain = 495.566 ; free physical = 2465 ; free virtual = 7384
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2223.164 ; gain = 507.441 ; free physical = 2459 ; free virtual = 7378
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2223.164 ; gain = 507.441 ; free physical = 2459 ; free virtual = 7378
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2223.164 ; gain = 0.000 ; free physical = 2459 ; free virtual = 7378
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_axistream2axivideo_0_0/constraints/axistream2axivideo_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_axistream2axivideo_0_0/constraints/axistream2axivideo_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_axistream2axivideo_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_axistream2axivideo_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2366.914 ; gain = 0.000 ; free physical = 2334 ; free virtual = 7260
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2366.949 ; gain = 0.000 ; free physical = 2333 ; free virtual = 7259
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2366.949 ; gain = 651.227 ; free physical = 1097 ; free virtual = 6003
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2366.949 ; gain = 651.227 ; free physical = 1097 ; free virtual = 6003
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_axistream2axivideo_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2366.949 ; gain = 651.227 ; free physical = 1096 ; free virtual = 6001
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2366.949 ; gain = 651.227 ; free physical = 1040 ; free virtual = 5946
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 2     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 9     
+	   4 Input    2 Bit        Muxes := 9     
+	   2 Input    1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port inStream_TKEEP[0] in module axistream2axivideo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TSTRB[0] in module axistream2axivideo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TUSER[0] in module axistream2axivideo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TLAST[0] in module axistream2axivideo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TID[0] in module axistream2axivideo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDEST[0] in module axistream2axivideo is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2366.949 ; gain = 651.227 ; free physical = 463 ; free virtual = 5369
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2366.949 ; gain = 651.227 ; free physical = 200 ; free virtual = 5122
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2366.949 ; gain = 651.227 ; free physical = 198 ; free virtual = 5121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2366.949 ; gain = 651.227 ; free physical = 198 ; free virtual = 5121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 2366.949 ; gain = 651.227 ; free physical = 338 ; free virtual = 5306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 2366.949 ; gain = 651.227 ; free physical = 337 ; free virtual = 5305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 2366.949 ; gain = 651.227 ; free physical = 334 ; free virtual = 5302
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 2366.949 ; gain = 651.227 ; free physical = 334 ; free virtual = 5302
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 2366.949 ; gain = 651.227 ; free physical = 334 ; free virtual = 5302
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 2366.949 ; gain = 651.227 ; free physical = 334 ; free virtual = 5302
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     8|
+|2     |LUT1   |     3|
+|3     |LUT2   |     4|
+|4     |LUT3   |    33|
+|5     |LUT4   |     9|
+|6     |LUT5   |    27|
+|7     |LUT6   |    13|
+|8     |FDRE   |    88|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 2366.949 ; gain = 651.227 ; free physical = 334 ; free virtual = 5302
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2366.949 ; gain = 507.441 ; free physical = 327 ; free virtual = 5295
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 2366.949 ; gain = 651.227 ; free physical = 327 ; free virtual = 5295
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2366.949 ; gain = 0.000 ; free physical = 324 ; free virtual = 5292
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2366.949 ; gain = 0.000 ; free physical = 572 ; free virtual = 5557
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 94ed1196
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:37 . Memory (MB): peak = 2366.949 ; gain = 999.727 ; free physical = 580 ; free virtual = 5564
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1748.806; main = 1431.920; forked = 326.631
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3324.070; main = 2366.918; forked = 989.168
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2390.926 ; gain = 0.000 ; free physical = 580 ; free virtual = 5564
+INFO: [Common 17-1381] The checkpoint '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_axistream2axivideo_0_0_synth_1/design_1_axistream2axivideo_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axistream2axivideo_0_0, cache-ID = b909f54e17f669d8
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2390.926 ; gain = 0.000 ; free physical = 583 ; free virtual = 5556
+INFO: [Common 17-1381] The checkpoint '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_axistream2axivideo_0_0_synth_1/design_1_axistream2axivideo_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_axistream2axivideo_0_0_utilization_synth.rpt -pb design_1_axistream2axivideo_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 18 11:13:18 2024...

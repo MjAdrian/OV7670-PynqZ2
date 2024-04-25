@@ -1,0 +1,763 @@
+
+*** Running vivado
+    with args -log design_1_scaleImage_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_scaleImage_0_1.tcl
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_scaleImage_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1344.379 ; gain = 0.023 ; free physical = 5056 ; free virtual = 10110
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/vivado-library-master'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/HLS'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/adrian/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_scaleImage_0_1
+Command: synth_design -top design_1_scaleImage_0_1 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 53736
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2120.258 ; gain = 402.629 ; free physical = 2168 ; free virtual = 7237
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_scaleImage_0_1' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_scaleImage_0_1/synth/design_1_scaleImage_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'scaleImage' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Block_proc' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Block_proc.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'Block_proc' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Block_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'AXIvideo2Mat' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/AXIvideo2Mat.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'AXIvideo2Mat' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/AXIvideo2Mat.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Resize' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Resize_opr_linear' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Resize_opr_linearbkb' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linearbkb.v:52]
+INFO: [Synth 8-6157] synthesizing module 'Resize_opr_linearbkb_ram' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linearbkb.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Resize_opr_linearbkb_ram' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linearbkb.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Resize_opr_linearbkb' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linearbkb.v:52]
+INFO: [Synth 8-6157] synthesizing module 'Resize_opr_linearcud' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linearcud.v:50]
+INFO: [Synth 8-6157] synthesizing module 'Resize_opr_linearcud_ram' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linearcud.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Resize_opr_linearcud_ram' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linearcud.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Resize_opr_linearcud' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linearcud.v:50]
+INFO: [Synth 8-6157] synthesizing module 'scaleImage_sdiv_4dEe' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_sdiv_4dEe.v:178]
+INFO: [Synth 8-6157] synthesizing module 'scaleImage_sdiv_4dEe_div' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_sdiv_4dEe.v:87]
+INFO: [Synth 8-6157] synthesizing module 'scaleImage_sdiv_4dEe_div_u' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_sdiv_4dEe.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'scaleImage_sdiv_4dEe_div_u' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_sdiv_4dEe.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'scaleImage_sdiv_4dEe_div' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_sdiv_4dEe.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'scaleImage_sdiv_4dEe' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_sdiv_4dEe.v:178]
+INFO: [Synth 8-6157] synthesizing module 'scaleImage_sdiv_4eOg' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_sdiv_4eOg.v:178]
+INFO: [Synth 8-6157] synthesizing module 'scaleImage_sdiv_4eOg_div' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_sdiv_4eOg.v:87]
+INFO: [Synth 8-6157] synthesizing module 'scaleImage_sdiv_4eOg_div_u' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_sdiv_4eOg.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'scaleImage_sdiv_4eOg_div_u' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_sdiv_4eOg.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'scaleImage_sdiv_4eOg_div' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_sdiv_4eOg.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'scaleImage_sdiv_4eOg' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_sdiv_4eOg.v:178]
+INFO: [Synth 8-6157] synthesizing module 'scaleImage_udiv_2fYi' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:127]
+INFO: [Synth 8-6157] synthesizing module 'scaleImage_udiv_2fYi_div' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:67]
+INFO: [Synth 8-6157] synthesizing module 'scaleImage_udiv_2fYi_div_u' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'scaleImage_udiv_2fYi_div_u' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'scaleImage_udiv_2fYi_div' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'scaleImage_udiv_2fYi' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:127]
+INFO: [Synth 8-6157] synthesizing module 'scaleImage_mul_mug8j' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_mul_mug8j.v:13]
+INFO: [Synth 8-6157] synthesizing module 'scaleImage_mul_mug8j_DSP48_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_mul_mug8j.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'scaleImage_mul_mug8j_DSP48_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_mul_mug8j.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'scaleImage_mul_mug8j' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_mul_mug8j.v:13]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2490]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2494]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2648]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2650]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2652]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2654]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2662]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2664]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2666]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2692]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2694]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2698]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2700]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2702]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2704]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2706]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2708]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2710]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2712]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2714]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2716]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2718]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2720]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2722]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2724]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2790]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2794]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2822]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:2824]
+INFO: [Synth 8-6155] done synthesizing module 'Resize_opr_linear' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'Resize' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Mat2AXIvideo' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Mat2AXIvideo.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'Mat2AXIvideo' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Mat2AXIvideo.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w10_d2_A' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/fifo_w10_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w10_d2_A_shiftReg' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/fifo_w10_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w10_d2_A_shiftReg' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/fifo_w10_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w10_d2_A' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/fifo_w10_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w11_d2_A' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/fifo_w11_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w11_d2_A_shiftReg' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/fifo_w11_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w11_d2_A_shiftReg' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/fifo_w11_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w11_d2_A' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/fifo_w11_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w11_d3_A' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/fifo_w11_d3_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w11_d3_A_shiftReg' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/fifo_w11_d3_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w11_d3_A_shiftReg' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/fifo_w11_d3_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w11_d3_A' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/fifo_w11_d3_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/fifo_w8_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A_shiftReg' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/fifo_w8_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A_shiftReg' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/fifo_w8_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/fifo_w8_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Resize_U0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/start_for_Resize_U0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Resize_U0_shiftReg' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/start_for_Resize_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Resize_U0_shiftReg' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/start_for_Resize_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Resize_U0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/start_for_Resize_U0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIhbi' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/start_for_Mat2AXIhbi.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIhbi_shiftReg' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/start_for_Mat2AXIhbi.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIhbi_shiftReg' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/start_for_Mat2AXIhbi.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIhbi' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/start_for_Mat2AXIhbi.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'scaleImage' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_scaleImage_0_1' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_scaleImage_0_1/synth/design_1_scaleImage_0_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element loop[25].divisor_tmp_reg[26] was removed.  [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:51]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_dest_V_1_sel_rd_reg was removed.  [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Mat2AXIvideo.v:259]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_id_V_1_sel_rd_reg was removed.  [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Mat2AXIvideo.v:285]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_keep_V_1_sel_rd_reg was removed.  [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Mat2AXIvideo.v:311]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_strb_V_1_sel_rd_reg was removed.  [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Mat2AXIvideo.v:373]
+WARNING: [Synth 8-6014] Unused sequential element AXIvideo2Mat_U0_ap_ready_count_reg was removed.  [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage.v:495]
+WARNING: [Synth 8-6014] Unused sequential element Block_proc_U0_ap_ready_count_reg was removed.  [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage.v:503]
+WARNING: [Synth 8-7129] Port reset in module scaleImage_udiv_2fYi_div_u is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Resize_opr_linearcud is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Resize_opr_linearbkb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TKEEP[0] in module AXIvideo2Mat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TSTRB[0] in module AXIvideo2Mat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TID[0] in module AXIvideo2Mat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDEST[0] in module AXIvideo2Mat is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2239.195 ; gain = 521.566 ; free physical = 1563 ; free virtual = 6634
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2257.008 ; gain = 539.379 ; free physical = 1502 ; free virtual = 6573
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2257.008 ; gain = 539.379 ; free physical = 1502 ; free virtual = 6573
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2257.008 ; gain = 0.000 ; free physical = 1278 ; free virtual = 6349
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_scaleImage_0_1/constraints/scaleImage_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_scaleImage_0_1/constraints/scaleImage_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_scaleImage_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_scaleImage_0_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2398.758 ; gain = 0.000 ; free physical = 866 ; free virtual = 5939
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2398.793 ; gain = 0.000 ; free physical = 849 ; free virtual = 5921
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2398.793 ; gain = 681.164 ; free physical = 174 ; free virtual = 5015
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2398.793 ; gain = 681.164 ; free physical = 174 ; free virtual = 5015
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_scaleImage_0_1_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2398.793 ; gain = 681.164 ; free physical = 174 ; free virtual = 5015
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[25].remd_tmp_reg[26]' and it is trimmed from '26' to '11' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[25].dividend_tmp_reg[26]' and it is trimmed from '26' to '11' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[24].remd_tmp_reg[25]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[23].remd_tmp_reg[24]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[22].remd_tmp_reg[23]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[21].remd_tmp_reg[22]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[20].remd_tmp_reg[21]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[19].remd_tmp_reg[20]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[18].remd_tmp_reg[19]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[17].remd_tmp_reg[18]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[16].remd_tmp_reg[17]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[15].remd_tmp_reg[16]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[14].remd_tmp_reg[15]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[13].remd_tmp_reg[14]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[12].remd_tmp_reg[13]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[11].remd_tmp_reg[12]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[10].remd_tmp_reg[11]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[9].remd_tmp_reg[10]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[8].remd_tmp_reg[9]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[7].remd_tmp_reg[8]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[6].remd_tmp_reg[7]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[5].remd_tmp_reg[6]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[4].remd_tmp_reg[5]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[3].remd_tmp_reg[4]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[2].remd_tmp_reg[3]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[1].remd_tmp_reg[2]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[0].remd_tmp_reg[1]' and it is trimmed from '26' to '25' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_udiv_2fYi.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sext_ln1118_reg_2152_reg' and it is trimmed from '26' to '18' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:1788]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lshr_ln1148_4_reg_1884_reg' and it is trimmed from '31' to '26' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:1729]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lshr_ln1148_5_reg_1889_reg' and it is trimmed from '31' to '26' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:1730]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lshr_ln1148_1_reg_1869_reg' and it is trimmed from '31' to '26' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:1727]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lshr_ln1148_2_reg_1874_reg' and it is trimmed from '31' to '26' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:1728]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2398.793 ; gain = 681.164 ; free physical = 169 ; free virtual = 4893
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   48 Bit       Adders := 1     
+	   3 Input   48 Bit       Adders := 2     
+	   3 Input   44 Bit       Adders := 1     
+	   2 Input   43 Bit       Adders := 3     
+	   3 Input   43 Bit       Adders := 1     
+	   2 Input   42 Bit       Adders := 3     
+	   3 Input   33 Bit       Adders := 54    
+	   2 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 4     
+	   2 Input   27 Bit       Adders := 2     
+	   2 Input   26 Bit       Adders := 4     
+	   2 Input   20 Bit       Adders := 4     
+	   3 Input   18 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 3     
+	   2 Input   12 Bit       Adders := 3     
+	   2 Input   11 Bit       Adders := 6     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 9     
++---XORs : 
+	   2 Input      1 Bit         XORs := 9     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               51 Bit    Registers := 1     
+	               48 Bit    Registers := 5     
+	               44 Bit    Registers := 1     
+	               43 Bit    Registers := 7     
+	               42 Bit    Registers := 6     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 68    
+	               27 Bit    Registers := 4     
+	               26 Bit    Registers := 60    
+	               25 Bit    Registers := 50    
+	               20 Bit    Registers := 2     
+	               18 Bit    Registers := 15    
+	               16 Bit    Registers := 6     
+	               12 Bit    Registers := 3     
+	               11 Bit    Registers := 120   
+	               10 Bit    Registers := 7     
+	                8 Bit    Registers := 25    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 24    
+	                1 Bit    Registers := 184   
++---Multipliers : 
+	              11x32  Multipliers := 2     
++---RAMs : 
+	               6K Bit	(801 X 8 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   51 Bit        Muxes := 2     
+	  52 Input   51 Bit        Muxes := 1     
+	   2 Input   50 Bit        Muxes := 1     
+	   2 Input   43 Bit        Muxes := 5     
+	   2 Input   42 Bit        Muxes := 6     
+	   2 Input   41 Bit        Muxes := 1     
+	   2 Input   27 Bit        Muxes := 2     
+	   2 Input   26 Bit        Muxes := 2     
+	   2 Input   25 Bit        Muxes := 50    
+	   2 Input   20 Bit        Muxes := 6     
+	   2 Input   18 Bit        Muxes := 4     
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 10    
+	   2 Input   12 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 11    
+	   2 Input   10 Bit        Muxes := 3     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 15    
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 35    
+	   4 Input    2 Bit        Muxes := 5     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 117   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'scaleImage_sdiv_4dEe_div_U/scaleImage_sdiv_4dEe_div_u_0/remd_tmp_reg' and it is trimmed from '43' to '42' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_sdiv_4dEe.v:42]
+WARNING: [Synth 8-3936] Found unconnected internal register 'scaleImage_sdiv_4eOg_div_U/scaleImage_sdiv_4eOg_div_u_0/remd_tmp_reg' and it is trimmed from '42' to '41' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/scaleImage_sdiv_4eOg.v:42]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_ln1118_3_reg_2172_reg' and it is trimmed from '48' to '31' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:1778]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_ln1118_3_reg_2172_reg' and it is trimmed from '48' to '17' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:1778]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_ln1118_1_reg_2167_reg' and it is trimmed from '48' to '31' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:1777]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_ln1118_1_reg_2167_reg' and it is trimmed from '48' to '17' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:1777]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_ln1118_7_reg_2199_reg' and it is trimmed from '48' to '31' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:1405]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_ln1118_7_reg_2199_reg' and it is trimmed from '48' to '17' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:1405]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_ln1118_5_reg_2193_reg' and it is trimmed from '48' to '31' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:1404]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_ln1118_5_reg_2193_reg' and it is trimmed from '48' to '17' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:1404]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sext_ln2401_reg_2076_reg' and it is trimmed from '64' to '10' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/61f0/hdl/verilog/Resize_opr_linear.v:1816]
+DSP Report: Generating DSP mul_ln703_1_fu_875_p2, operation Mode is: A2*B2.
+DSP Report: register ap_phi_reg_pp0_iter30_dx_reg_353_reg is absorbed into DSP mul_ln703_1_fu_875_p2.
+DSP Report: register mul_ln703_1_fu_875_p2 is absorbed into DSP mul_ln703_1_fu_875_p2.
+DSP Report: operator mul_ln703_1_fu_875_p2 is absorbed into DSP mul_ln703_1_fu_875_p2.
+DSP Report: operator mul_ln703_1_fu_875_p2 is absorbed into DSP mul_ln703_1_fu_875_p2.
+DSP Report: Generating DSP mul_ln703_1_reg_2009_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register ap_phi_reg_pp0_iter30_dx_reg_353_reg is absorbed into DSP mul_ln703_1_reg_2009_reg.
+DSP Report: register mul_ln703_1_reg_2009_reg is absorbed into DSP mul_ln703_1_reg_2009_reg.
+DSP Report: operator mul_ln703_1_fu_875_p2 is absorbed into DSP mul_ln703_1_reg_2009_reg.
+DSP Report: operator mul_ln703_1_fu_875_p2 is absorbed into DSP mul_ln703_1_reg_2009_reg.
+DSP Report: Generating DSP mul_ln703_fu_866_p2, operation Mode is: A2*B2.
+DSP Report: register ap_phi_reg_pp0_iter30_dy_reg_344_reg is absorbed into DSP mul_ln703_fu_866_p2.
+DSP Report: register mul_ln703_fu_866_p2 is absorbed into DSP mul_ln703_fu_866_p2.
+DSP Report: operator mul_ln703_fu_866_p2 is absorbed into DSP mul_ln703_fu_866_p2.
+DSP Report: operator mul_ln703_fu_866_p2 is absorbed into DSP mul_ln703_fu_866_p2.
+DSP Report: Generating DSP mul_ln703_reg_2004_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register ap_phi_reg_pp0_iter30_dy_reg_344_reg is absorbed into DSP mul_ln703_reg_2004_reg.
+DSP Report: register mul_ln703_reg_2004_reg is absorbed into DSP mul_ln703_reg_2004_reg.
+DSP Report: operator mul_ln703_fu_866_p2 is absorbed into DSP mul_ln703_reg_2004_reg.
+DSP Report: operator mul_ln703_fu_866_p2 is absorbed into DSP mul_ln703_reg_2004_reg.
+DSP Report: Generating DSP scaleImage_mul_mug8j_U23/scaleImage_mul_mug8j_DSP48_0_U/p, operation Mode is: A*B''.
+DSP Report: register scaleImage_mul_mug8j_U23/scaleImage_mul_mug8j_DSP48_0_U/p is absorbed into DSP scaleImage_mul_mug8j_U23/scaleImage_mul_mug8j_DSP48_0_U/p.
+DSP Report: register scaleImage_mul_mug8j_U23/scaleImage_mul_mug8j_DSP48_0_U/p is absorbed into DSP scaleImage_mul_mug8j_U23/scaleImage_mul_mug8j_DSP48_0_U/p.
+DSP Report: operator scaleImage_mul_mug8j_U23/scaleImage_mul_mug8j_DSP48_0_U/p is absorbed into DSP scaleImage_mul_mug8j_U23/scaleImage_mul_mug8j_DSP48_0_U/p.
+DSP Report: Generating DSP mul_ln1118_5_fu_1505_p2, operation Mode is: A*B2.
+DSP Report: register mul_ln1118_5_fu_1505_p2 is absorbed into DSP mul_ln1118_5_fu_1505_p2.
+DSP Report: operator mul_ln1118_5_fu_1505_p2 is absorbed into DSP mul_ln1118_5_fu_1505_p2.
+DSP Report: operator mul_ln1118_5_fu_1505_p2 is absorbed into DSP mul_ln1118_5_fu_1505_p2.
+DSP Report: Generating DSP mul_ln1118_5_reg_2193_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_ln1118_4_reg_2177_reg is absorbed into DSP mul_ln1118_5_reg_2193_reg.
+DSP Report: register mul_ln1118_5_reg_2193_reg is absorbed into DSP mul_ln1118_5_reg_2193_reg.
+DSP Report: operator mul_ln1118_5_fu_1505_p2 is absorbed into DSP mul_ln1118_5_reg_2193_reg.
+DSP Report: operator mul_ln1118_5_fu_1505_p2 is absorbed into DSP mul_ln1118_5_reg_2193_reg.
+DSP Report: Generating DSP scaleImage_mul_mug8j_U22/scaleImage_mul_mug8j_DSP48_0_U/p, operation Mode is: A*B2.
+DSP Report: register scaleImage_mul_mug8j_U22/scaleImage_mul_mug8j_DSP48_0_U/p is absorbed into DSP scaleImage_mul_mug8j_U22/scaleImage_mul_mug8j_DSP48_0_U/p.
+DSP Report: operator scaleImage_mul_mug8j_U22/scaleImage_mul_mug8j_DSP48_0_U/p is absorbed into DSP scaleImage_mul_mug8j_U22/scaleImage_mul_mug8j_DSP48_0_U/p.
+DSP Report: Generating DSP mul_ln1118_3_fu_1481_p2, operation Mode is: A*B2.
+DSP Report: register mul_ln1118_3_fu_1481_p2 is absorbed into DSP mul_ln1118_3_fu_1481_p2.
+DSP Report: operator mul_ln1118_3_fu_1481_p2 is absorbed into DSP mul_ln1118_3_fu_1481_p2.
+DSP Report: operator mul_ln1118_3_fu_1481_p2 is absorbed into DSP mul_ln1118_3_fu_1481_p2.
+DSP Report: Generating DSP mul_ln1118_3_reg_2172_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_ln1118_2_reg_2162_reg is absorbed into DSP mul_ln1118_3_reg_2172_reg.
+DSP Report: register mul_ln1118_3_reg_2172_reg is absorbed into DSP mul_ln1118_3_reg_2172_reg.
+DSP Report: operator mul_ln1118_3_fu_1481_p2 is absorbed into DSP mul_ln1118_3_reg_2172_reg.
+DSP Report: operator mul_ln1118_3_fu_1481_p2 is absorbed into DSP mul_ln1118_3_reg_2172_reg.
+DSP Report: Generating DSP scaleImage_mul_mug8j_U21/scaleImage_mul_mug8j_DSP48_0_U/p, operation Mode is: A*B''.
+DSP Report: register scaleImage_mul_mug8j_U21/scaleImage_mul_mug8j_DSP48_0_U/p is absorbed into DSP scaleImage_mul_mug8j_U21/scaleImage_mul_mug8j_DSP48_0_U/p.
+DSP Report: register scaleImage_mul_mug8j_U21/scaleImage_mul_mug8j_DSP48_0_U/p is absorbed into DSP scaleImage_mul_mug8j_U21/scaleImage_mul_mug8j_DSP48_0_U/p.
+DSP Report: operator scaleImage_mul_mug8j_U21/scaleImage_mul_mug8j_DSP48_0_U/p is absorbed into DSP scaleImage_mul_mug8j_U21/scaleImage_mul_mug8j_DSP48_0_U/p.
+DSP Report: Generating DSP mul_ln1118_1_fu_1472_p2, operation Mode is: A*B2.
+DSP Report: register mul_ln1118_1_fu_1472_p2 is absorbed into DSP mul_ln1118_1_fu_1472_p2.
+DSP Report: operator mul_ln1118_1_fu_1472_p2 is absorbed into DSP mul_ln1118_1_fu_1472_p2.
+DSP Report: operator mul_ln1118_1_fu_1472_p2 is absorbed into DSP mul_ln1118_1_fu_1472_p2.
+DSP Report: Generating DSP mul_ln1118_1_reg_2167_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_ln1118_reg_2157_reg is absorbed into DSP mul_ln1118_1_reg_2167_reg.
+DSP Report: register mul_ln1118_1_reg_2167_reg is absorbed into DSP mul_ln1118_1_reg_2167_reg.
+DSP Report: operator mul_ln1118_1_fu_1472_p2 is absorbed into DSP mul_ln1118_1_reg_2167_reg.
+DSP Report: operator mul_ln1118_1_fu_1472_p2 is absorbed into DSP mul_ln1118_1_reg_2167_reg.
+DSP Report: Generating DSP scaleImage_mul_mug8j_U24/scaleImage_mul_mug8j_DSP48_0_U/p, operation Mode is: A*B2.
+DSP Report: register scaleImage_mul_mug8j_U24/scaleImage_mul_mug8j_DSP48_0_U/p is absorbed into DSP scaleImage_mul_mug8j_U24/scaleImage_mul_mug8j_DSP48_0_U/p.
+DSP Report: operator scaleImage_mul_mug8j_U24/scaleImage_mul_mug8j_DSP48_0_U/p is absorbed into DSP scaleImage_mul_mug8j_U24/scaleImage_mul_mug8j_DSP48_0_U/p.
+DSP Report: Generating DSP mul_ln1118_7_fu_1514_p2, operation Mode is: A*B2.
+DSP Report: register mul_ln1118_7_fu_1514_p2 is absorbed into DSP mul_ln1118_7_fu_1514_p2.
+DSP Report: operator mul_ln1118_7_fu_1514_p2 is absorbed into DSP mul_ln1118_7_fu_1514_p2.
+DSP Report: operator mul_ln1118_7_fu_1514_p2 is absorbed into DSP mul_ln1118_7_fu_1514_p2.
+DSP Report: Generating DSP mul_ln1118_7_reg_2199_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register mul_ln1118_6_reg_2182_reg is absorbed into DSP mul_ln1118_7_reg_2199_reg.
+DSP Report: register mul_ln1118_7_reg_2199_reg is absorbed into DSP mul_ln1118_7_reg_2199_reg.
+DSP Report: operator mul_ln1118_7_fu_1514_p2 is absorbed into DSP mul_ln1118_7_reg_2199_reg.
+DSP Report: operator mul_ln1118_7_fu_1514_p2 is absorbed into DSP mul_ln1118_7_reg_2199_reg.
+WARNING: [Synth 8-7129] Port reset in module scaleImage_udiv_2fYi_div_u is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module scaleImage_udiv_2fYi_div_u__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TKEEP[0] in module scaleImage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TSTRB[0] in module scaleImage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TID[0] in module scaleImage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDEST[0] in module scaleImage is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[47]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[46]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[45]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[44]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[43]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[42]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[41]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[40]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[39]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[38]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[37]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[36]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[35]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[34]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[33]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[32]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[31]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[30]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[29]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[28]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[27]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[26]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[25]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[24]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[23]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[22]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[21]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[20]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[19]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[18]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_1_reg_2009_reg[17]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[47]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[46]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[45]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[44]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[43]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[42]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[41]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[40]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[39]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[38]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[37]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[36]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[35]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[34]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[33]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[32]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[31]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[30]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[29]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[28]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[27]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[26]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[25]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[24]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[23]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[22]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[21]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[20]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[19]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[18]) is unused and will be removed from module Resize_opr_linear.
+WARNING: [Synth 8-3332] Sequential element (mul_ln703_reg_2004_reg[17]) is unused and will be removed from module Resize_opr_linear.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 2398.793 ; gain = 681.164 ; free physical = 1460 ; free virtual = 6033
+---------------------------------------------------------------------------------
+ Sort Area is  mul_ln1118_1_fu_1472_p2_b : 0 0 : 2894 4519 : Used 1 time 0
+ Sort Area is  mul_ln1118_1_fu_1472_p2_b : 0 1 : 1625 4519 : Used 1 time 0
+ Sort Area is  mul_ln1118_3_fu_1481_p2_d : 0 0 : 2894 4519 : Used 1 time 0
+ Sort Area is  mul_ln1118_3_fu_1481_p2_d : 0 1 : 1625 4519 : Used 1 time 0
+ Sort Area is  mul_ln1118_5_fu_1505_p2_f : 0 0 : 2894 4519 : Used 1 time 0
+ Sort Area is  mul_ln1118_5_fu_1505_p2_f : 0 1 : 1625 4519 : Used 1 time 0
+ Sort Area is  mul_ln1118_7_fu_1514_p2_6 : 0 0 : 2894 4519 : Used 1 time 0
+ Sort Area is  mul_ln1118_7_fu_1514_p2_6 : 0 1 : 1625 4519 : Used 1 time 0
+ Sort Area is  mul_ln703_1_fu_875_p2_0 : 0 0 : 2010 3952 : Used 1 time 0
+ Sort Area is  mul_ln703_1_fu_875_p2_0 : 0 1 : 1942 3952 : Used 1 time 0
+ Sort Area is  mul_ln703_fu_866_p2_3 : 0 0 : 2010 3952 : Used 1 time 0
+ Sort Area is  mul_ln703_fu_866_p2_3 : 0 1 : 1942 3952 : Used 1 time 0
+ Sort Area is  scaleImage_mul_mug8j_U21/scaleImage_mul_mug8j_DSP48_0_U/p_9 : 0 0 : 1184 1184 : Used 1 time 0
+ Sort Area is  scaleImage_mul_mug8j_U23/scaleImage_mul_mug8j_DSP48_0_U/p_e : 0 0 : 1184 1184 : Used 1 time 0
+ Sort Area is  scaleImage_mul_mug8j_U22/scaleImage_mul_mug8j_DSP48_0_U/p_c : 0 0 : 1175 1175 : Used 1 time 0
+ Sort Area is  scaleImage_mul_mug8j_U24/scaleImage_mul_mug8j_DSP48_0_U/p_4 : 0 0 : 1175 1175 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++----------------------------------------------+--------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                   | RTL Object                                             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------------------------------------+--------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/\Resize_U0/grp_Resize_opr_linear_fu_160  | k_buf_val_val_0_0_U/Resize_opr_linearbkb_ram_U/ram_reg | 801 x 8(READ_FIRST)    | W | R | 801 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/\Resize_U0/grp_Resize_opr_linear_fu_160  | k_buf_val_val_1_0_U/Resize_opr_linearcud_ram_U/ram_reg | 801 x 8(READ_FIRST)    | W |   | 801 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++----------------------------------------------+--------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Resize_opr_linear | A2*B2           | 18     | 11     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Resize_opr_linear | (PCIN>>17)+A*B2 | 15     | 11     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|Resize_opr_linear | A2*B2           | 18     | 11     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Resize_opr_linear | (PCIN>>17)+A*B2 | 15     | 11     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|Resize_opr_linear | A*B''           | 20     | 9      | -      | -      | 29     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|Resize_opr_linear | A*B2            | 20     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|Resize_opr_linear | (PCIN>>17)+A*B2 | 20     | 11     | -      | -      | 31     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|Resize_opr_linear | A*B2            | 20     | 9      | -      | -      | 29     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|Resize_opr_linear | A*B2            | 20     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|Resize_opr_linear | (PCIN>>17)+A*B2 | 20     | 11     | -      | -      | 31     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|Resize_opr_linear | A*B''           | 20     | 9      | -      | -      | 29     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|Resize_opr_linear | A*B2            | 20     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|Resize_opr_linear | (PCIN>>17)+A*B2 | 20     | 11     | -      | -      | 31     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|Resize_opr_linear | A*B2            | 20     | 9      | -      | -      | 29     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|Resize_opr_linear | A*B2            | 20     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|Resize_opr_linear | (PCIN>>17)+A*B2 | 20     | 11     | -      | -      | 31     | 0    | 1    | -    | -    | -     | 0    | 1    | 
++------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 2398.793 ; gain = 681.164 ; free physical = 1324 ; free virtual = 5947
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 2398.793 ; gain = 681.164 ; free physical = 1322 ; free virtual = 5942
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++----------------------------------------------+--------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                   | RTL Object                                             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------------------------------------+--------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/\Resize_U0/grp_Resize_opr_linear_fu_160  | k_buf_val_val_0_0_U/Resize_opr_linearbkb_ram_U/ram_reg | 801 x 8(READ_FIRST)    | W | R | 801 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/\Resize_U0/grp_Resize_opr_linear_fu_160  | k_buf_val_val_1_0_U/Resize_opr_linearcud_ram_U/ram_reg | 801 x 8(READ_FIRST)    | W |   | 801 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++----------------------------------------------+--------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/Resize_U0/grp_Resize_opr_linear_fu_160/k_buf_val_val_0_0_U/Resize_opr_linearbkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Resize_U0/grp_Resize_opr_linear_fu_160/k_buf_val_val_0_0_U/Resize_opr_linearbkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Resize_U0/grp_Resize_opr_linear_fu_160/k_buf_val_val_1_0_U/Resize_opr_linearcud_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 2398.793 ; gain = 681.164 ; free physical = 1289 ; free virtual = 5898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 2398.793 ; gain = 681.164 ; free physical = 1994 ; free virtual = 6647
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 2398.793 ; gain = 681.164 ; free physical = 1993 ; free virtual = 6645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 2398.793 ; gain = 681.164 ; free physical = 1710 ; free virtual = 6415
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 2398.793 ; gain = 681.164 ; free physical = 1709 ; free virtual = 6413
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:00 . Memory (MB): peak = 2398.793 ; gain = 681.164 ; free physical = 1699 ; free virtual = 6410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:00 . Memory (MB): peak = 2398.793 ; gain = 681.164 ; free physical = 1699 ; free virtual = 6410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                                                                                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U19/scaleImage_udiv_2fYi_div_U/scaleImage_udiv_2fYi_div_u_0/loop[0].dividend_tmp_reg[1][25] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U19/scaleImage_udiv_2fYi_div_U/scaleImage_udiv_2fYi_div_u_0/loop[1].dividend_tmp_reg[2][25] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U19/scaleImage_udiv_2fYi_div_U/scaleImage_udiv_2fYi_div_u_0/loop[2].dividend_tmp_reg[3][25] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U19/scaleImage_udiv_2fYi_div_U/scaleImage_udiv_2fYi_div_u_0/loop[3].dividend_tmp_reg[4][25] | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U19/scaleImage_udiv_2fYi_div_U/scaleImage_udiv_2fYi_div_u_0/loop[4].dividend_tmp_reg[5][25] | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U19/scaleImage_udiv_2fYi_div_U/scaleImage_udiv_2fYi_div_u_0/loop[5].dividend_tmp_reg[6][25] | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U19/scaleImage_udiv_2fYi_div_U/scaleImage_udiv_2fYi_div_u_0/loop[6].dividend_tmp_reg[7][25] | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U19/scaleImage_udiv_2fYi_div_U/scaleImage_udiv_2fYi_div_u_0/loop[7].dividend_tmp_reg[8][25] | 10     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U19/scaleImage_udiv_2fYi_div_U/scaleImage_udiv_2fYi_div_u_0/loop[8].dividend_tmp_reg[9][25] | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U20/scaleImage_udiv_2fYi_div_U/scaleImage_udiv_2fYi_div_u_0/loop[0].dividend_tmp_reg[1][25] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U20/scaleImage_udiv_2fYi_div_U/scaleImage_udiv_2fYi_div_u_0/loop[1].dividend_tmp_reg[2][25] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U20/scaleImage_udiv_2fYi_div_U/scaleImage_udiv_2fYi_div_u_0/loop[2].dividend_tmp_reg[3][25] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U20/scaleImage_udiv_2fYi_div_U/scaleImage_udiv_2fYi_div_u_0/loop[3].dividend_tmp_reg[4][25] | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U20/scaleImage_udiv_2fYi_div_U/scaleImage_udiv_2fYi_div_u_0/loop[4].dividend_tmp_reg[5][25] | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U20/scaleImage_udiv_2fYi_div_U/scaleImage_udiv_2fYi_div_u_0/loop[5].dividend_tmp_reg[6][25] | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U20/scaleImage_udiv_2fYi_div_U/scaleImage_udiv_2fYi_div_u_0/loop[6].dividend_tmp_reg[7][25] | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U20/scaleImage_udiv_2fYi_div_U/scaleImage_udiv_2fYi_div_u_0/loop[7].dividend_tmp_reg[8][25] | 10     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U20/scaleImage_udiv_2fYi_div_U/scaleImage_udiv_2fYi_div_u_0/loop[8].dividend_tmp_reg[9][25] | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/icmp_ln2314_reg_1975_pp0_iter28_reg_reg[0]                                                                       | 27     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/p_Val2_8_reg_332_pp0_iter28_reg_reg[10]                                                                          | 27     | 11    | NO           | NO                 | YES               | 0      | 11      | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/p_Val2_8_reg_332_pp0_iter31_reg_reg[10]                                                                          | 3      | 11    | NO           | NO                 | YES               | 11     | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U20/scaleImage_udiv_2fYi_div_U/quot_reg[10]                                                 | 12     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U20/scaleImage_udiv_2fYi_div_U/quot_reg[9]                                                  | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U20/scaleImage_udiv_2fYi_div_U/quot_reg[8]                                                  | 10     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U20/scaleImage_udiv_2fYi_div_U/quot_reg[7]                                                  | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U20/scaleImage_udiv_2fYi_div_U/quot_reg[6]                                                  | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U20/scaleImage_udiv_2fYi_div_U/quot_reg[5]                                                  | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U20/scaleImage_udiv_2fYi_div_U/quot_reg[4]                                                  | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U20/scaleImage_udiv_2fYi_div_U/quot_reg[3]                                                  | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U20/scaleImage_udiv_2fYi_div_U/quot_reg[2]                                                  | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U20/scaleImage_udiv_2fYi_div_U/quot_reg[1]                                                  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U19/scaleImage_udiv_2fYi_div_U/quot_reg[10]                                                 | 12     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U19/scaleImage_udiv_2fYi_div_U/quot_reg[9]                                                  | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U19/scaleImage_udiv_2fYi_div_U/quot_reg[8]                                                  | 10     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U19/scaleImage_udiv_2fYi_div_U/quot_reg[7]                                                  | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U19/scaleImage_udiv_2fYi_div_U/quot_reg[6]                                                  | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U19/scaleImage_udiv_2fYi_div_U/quot_reg[5]                                                  | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U19/scaleImage_udiv_2fYi_div_U/quot_reg[4]                                                  | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U19/scaleImage_udiv_2fYi_div_U/quot_reg[3]                                                  | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U19/scaleImage_udiv_2fYi_div_U/quot_reg[2]                                                  | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_udiv_2fYi_U19/scaleImage_udiv_2fYi_div_U/quot_reg[1]                                                  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_sdiv_4dEe_U17/scaleImage_sdiv_4dEe_div_U/scaleImage_sdiv_4dEe_div_u_0/r_stage_reg[43]                 | 43     | 1     | YES          | NO                 | YES               | 0      | 2       | 
+|scaleImage  | Resize_U0/grp_Resize_opr_linear_fu_160/scaleImage_sdiv_4eOg_U18/scaleImage_sdiv_4eOg_div_U/scaleImage_sdiv_4eOg_div_u_0/r_stage_reg[42]                 | 42     | 1     | YES          | NO                 | YES               | 0      | 2       | 
++------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[2] | 11     | 11         | 11     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[2] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Resize_opr_linear | A''*B'             | 17     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|Resize_opr_linear | (PCIN>>17+A''*B')' | 30     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|Resize_opr_linear | A''*B'             | 17     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|Resize_opr_linear | (PCIN>>17+A''*B')' | 30     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|Resize_opr_linear | A'*B'              | 30     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Resize_opr_linear | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 31     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Resize_opr_linear | A'*B'              | 30     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Resize_opr_linear | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 31     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Resize_opr_linear | A'*B'              | 30     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Resize_opr_linear | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 31     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Resize_opr_linear | A'*B'              | 30     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Resize_opr_linear | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 31     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|Resize_opr_linear | A*B''              | 30     | 8      | -      | -      | 29     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|Resize_opr_linear | A*B'               | 30     | 8      | -      | -      | 29     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|Resize_opr_linear | A'*B''             | 30     | 8      | -      | -      | 29     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|Resize_opr_linear | A'*B'              | 30     | 8      | -      | -      | 29     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   667|
+|2     |DSP48E1  |    16|
+|9     |LUT1     |   556|
+|10    |LUT2     |  1880|
+|11    |LUT3     |  1425|
+|12    |LUT4     |   339|
+|13    |LUT5     |   130|
+|14    |LUT6     |   193|
+|15    |RAMB18E1 |     2|
+|16    |SRL16E   |    56|
+|17    |SRLC32E  |    16|
+|18    |FDRE     |  4852|
+|19    |FDSE     |    63|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:00 . Memory (MB): peak = 2398.793 ; gain = 681.164 ; free physical = 1698 ; free virtual = 6409
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 112 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2398.793 ; gain = 539.379 ; free physical = 1692 ; free virtual = 6403
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 2398.793 ; gain = 681.164 ; free physical = 1692 ; free virtual = 6403
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2398.793 ; gain = 0.000 ; free physical = 1891 ; free virtual = 6602
+INFO: [Netlist 29-17] Analyzing 685 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2398.793 ; gain = 0.000 ; free physical = 1932 ; free virtual = 6558
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 4bf4e55d
+INFO: [Common 17-83] Releasing license: Synthesis
+96 Infos, 155 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:07 . Memory (MB): peak = 2398.793 ; gain = 1030.633 ; free physical = 1931 ; free virtual = 6558
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1834.159; main = 1514.947; forked = 328.818
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3355.910; main = 2398.762; forked = 989.164
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2422.770 ; gain = 0.000 ; free physical = 1931 ; free virtual = 6560
+INFO: [Common 17-1381] The checkpoint '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_scaleImage_0_1_synth_1/design_1_scaleImage_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_scaleImage_0_1, cache-ID = 258972acf4f2c1d2
+INFO: [Coretcl 2-1174] Renamed 48 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2422.770 ; gain = 0.000 ; free physical = 1835 ; free virtual = 6472
+INFO: [Common 17-1381] The checkpoint '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_scaleImage_0_1_synth_1/design_1_scaleImage_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_scaleImage_0_1_utilization_synth.rpt -pb design_1_scaleImage_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 18 11:16:55 2024...

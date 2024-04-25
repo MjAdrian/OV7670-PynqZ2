@@ -1,0 +1,877 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Apr 18 11:13:24 2024
+# Process ID: 51802
+# Current directory: /home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_convolution_filter_0_2_synth_1
+# Command line: vivado -log design_1_convolution_filter_0_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_convolution_filter_0_2.tcl
+# Log file: /home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_convolution_filter_0_2_synth_1/design_1_convolution_filter_0_2.vds
+# Journal file: /home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_convolution_filter_0_2_synth_1/vivado.jou
+# Running On: adrian, OS: Linux, CPU Frequency: 2536.957 MHz, CPU Physical cores: 4, Host memory: 16477 MB
+#-----------------------------------------------------------
+source design_1_convolution_filter_0_2.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1347.348 ; gain = 0.023 ; free physical = 5596 ; free virtual = 10607
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/vivado-library-master'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/HLS'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/adrian/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_convolution_filter_0_2
+Command: synth_design -top design_1_convolution_filter_0_2 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 52061
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2120.375 ; gain = 404.715 ; free physical = 2832 ; free virtual = 7810
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_convolution_filter_0_2' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_convolution_filter_0_2/synth/design_1_convolution_filter_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'convolution_filter' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filter.v:10]
+INFO: [Synth 8-6157] synthesizing module 'convolution_filtebkb' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtebkb.v:53]
+INFO: [Synth 8-6157] synthesizing module 'convolution_filtebkb_ram' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtebkb.v:6]
+INFO: [Synth 8-3876] $readmem data file './convolution_filtebkb_ram.dat' is read successfully [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtebkb.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'convolution_filtebkb_ram' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtebkb.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'convolution_filtebkb' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtebkb.v:53]
+INFO: [Synth 8-6157] synthesizing module 'convolution_filter_AXILiteS_s_axi' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filter_AXILiteS_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'convolution_filter_AXILiteS_s_axi_ram' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filter_AXILiteS_s_axi.v:256]
+INFO: [Synth 8-6155] done synthesizing module 'convolution_filter_AXILiteS_s_axi_ram' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filter_AXILiteS_s_axi.v:256]
+INFO: [Synth 8-6155] done synthesizing module 'convolution_filter_AXILiteS_s_axi' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filter_AXILiteS_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'convolution_filtehbi' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:152]
+INFO: [Synth 8-6157] synthesizing module 'convolution_filtehbi_div' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:73]
+INFO: [Synth 8-6157] synthesizing module 'convolution_filtehbi_div_u' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'convolution_filtehbi_div_u' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'convolution_filtehbi_div' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'convolution_filtehbi' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:152]
+INFO: [Synth 8-6157] synthesizing module 'convolution_filteibs' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filteibs.v:30]
+INFO: [Synth 8-6157] synthesizing module 'convolution_filteibs_DSP48_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filteibs.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'convolution_filteibs_DSP48_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filteibs.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'convolution_filteibs' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filteibs.v:30]
+INFO: [Synth 8-6157] synthesizing module 'convolution_filtejbC' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtejbC.v:30]
+INFO: [Synth 8-6157] synthesizing module 'convolution_filtejbC_DSP48_1' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtejbC.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'convolution_filtejbC_DSP48_1' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtejbC.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'convolution_filtejbC' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtejbC.v:30]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filter.v:3145]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filter.v:3147]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filter.v:3149]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filter.v:3151]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filter.v:3153]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filter.v:3155]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filter.v:3157]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filter.v:3159]
+INFO: [Synth 8-6155] done synthesizing module 'convolution_filter' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filter.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_convolution_filter_0_2' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_convolution_filter_0_2/synth/design_1_convolution_filter_0_2.v:53]
+WARNING: [Synth 8-6014] Unused sequential element loop[22].divisor_tmp_reg[23] was removed.  [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:56]
+WARNING: [Synth 8-7129] Port reset in module convolution_filtehbi_div_u is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module convolution_filtebkb is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2230.312 ; gain = 514.652 ; free physical = 2399 ; free virtual = 7388
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2248.125 ; gain = 532.465 ; free physical = 2391 ; free virtual = 7379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2248.125 ; gain = 532.465 ; free physical = 2391 ; free virtual = 7379
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2248.125 ; gain = 0.000 ; free physical = 2368 ; free virtual = 7357
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_convolution_filter_0_2/constraints/convolution_filter_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_convolution_filter_0_2/constraints/convolution_filter_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_convolution_filter_0_2_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_convolution_filter_0_2_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2389.875 ; gain = 0.000 ; free physical = 1922 ; free virtual = 6909
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2389.910 ; gain = 0.000 ; free physical = 1869 ; free virtual = 6857
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2389.910 ; gain = 674.250 ; free physical = 396 ; free virtual = 5384
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2389.910 ; gain = 674.250 ; free physical = 396 ; free virtual = 5384
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_convolution_filter_0_2_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2389.910 ; gain = 674.250 ; free physical = 394 ; free virtual = 5382
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'waddr_reg' and it is trimmed from '7' to '6' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filter_AXILiteS_s_axi.v:152]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[22].remd_tmp_reg[23]' and it is trimmed from '23' to '8' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[22].dividend_tmp_reg[23]' and it is trimmed from '23' to '8' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[21].remd_tmp_reg[22]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[20].remd_tmp_reg[21]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[19].remd_tmp_reg[20]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[18].remd_tmp_reg[19]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[17].remd_tmp_reg[18]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[16].remd_tmp_reg[17]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[15].remd_tmp_reg[16]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[14].remd_tmp_reg[15]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[13].remd_tmp_reg[14]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[12].remd_tmp_reg[13]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[11].remd_tmp_reg[12]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[10].remd_tmp_reg[11]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[9].remd_tmp_reg[10]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[8].remd_tmp_reg[9]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[7].remd_tmp_reg[8]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[6].remd_tmp_reg[7]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[5].remd_tmp_reg[6]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[4].remd_tmp_reg[5]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[3].remd_tmp_reg[4]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[2].remd_tmp_reg[3]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[1].remd_tmp_reg[2]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[0].remd_tmp_reg[1]' and it is trimmed from '23' to '22' bits. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/8f65/hdl/verilog/convolution_filtehbi.v:55]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-3971] The signal "convolution_filter_AXILiteS_s_axi_ram:/gen_write[1].mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2389.910 ; gain = 674.250 ; free physical = 325 ; free virtual = 5314
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   24 Bit       Adders := 23    
+	   2 Input   23 Bit       Adders := 1     
+	   2 Input   22 Bit       Adders := 1     
+	   2 Input   21 Bit       Adders := 2     
+	   2 Input   20 Bit       Adders := 4     
+	   2 Input   19 Bit       Adders := 9     
+	   2 Input   18 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               23 Bit    Registers := 25    
+	               22 Bit    Registers := 23    
+	               18 Bit    Registers := 16    
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 174   
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 28    
+	                1 Bit    Registers := 75    
++---RAMs : 
+	               5K Bit	(640 X 8 bit)          RAMs := 6     
+	              416 Bit	(13 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 12    
+	   2 Input   23 Bit        Muxes := 1     
+	   2 Input   22 Bit        Muxes := 22    
+	   2 Input   19 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 15    
+	   3 Input    6 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 6     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP temp_V_49_fu_2380_p2, operation Mode is: A2*B2.
+DSP Report: register kernel_V_6_6_reg is absorbed into DSP temp_V_49_fu_2380_p2.
+DSP Report: register temp_V_49_fu_2380_p2 is absorbed into DSP temp_V_49_fu_2380_p2.
+DSP Report: operator temp_V_49_fu_2380_p2 is absorbed into DSP temp_V_49_fu_2380_p2.
+DSP Report: Generating DSP convolution_filtejbC_U33/convolution_filtejbC_DSP48_1_U/p, operation Mode is: C+A''*B2.
+DSP Report: register kernel_V_6_5_reg is absorbed into DSP convolution_filtejbC_U33/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U33/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U33/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U33/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U33/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U33/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U33/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U33/convolution_filtejbC_DSP48_1_U/m is absorbed into DSP convolution_filtejbC_U33/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: Generating DSP temp_V_47_fu_2347_p2, operation Mode is: A''*B2.
+DSP Report: register kernel_V_6_4_reg is absorbed into DSP temp_V_47_fu_2347_p2.
+DSP Report: register temp_V_47_fu_2347_p2 is absorbed into DSP temp_V_47_fu_2347_p2.
+DSP Report: register temp_V_47_fu_2347_p2 is absorbed into DSP temp_V_47_fu_2347_p2.
+DSP Report: operator temp_V_47_fu_2347_p2 is absorbed into DSP temp_V_47_fu_2347_p2.
+DSP Report: Generating DSP convolution_filtejbC_U32/convolution_filtejbC_DSP48_1_U/p, operation Mode is: C+A''*B2.
+DSP Report: register kernel_V_6_3_reg is absorbed into DSP convolution_filtejbC_U32/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U32/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U32/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U32/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U32/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U32/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U32/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U32/convolution_filtejbC_DSP48_1_U/m is absorbed into DSP convolution_filtejbC_U32/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: Generating DSP temp_V_45_fu_2313_p2, operation Mode is: A''*B2.
+DSP Report: register kernel_V_6_2_reg is absorbed into DSP temp_V_45_fu_2313_p2.
+DSP Report: register temp_V_45_fu_2313_p2 is absorbed into DSP temp_V_45_fu_2313_p2.
+DSP Report: register temp_V_45_fu_2313_p2 is absorbed into DSP temp_V_45_fu_2313_p2.
+DSP Report: operator temp_V_45_fu_2313_p2 is absorbed into DSP temp_V_45_fu_2313_p2.
+DSP Report: Generating DSP convolution_filtejbC_U31/convolution_filtejbC_DSP48_1_U/p, operation Mode is: C+A''*B2.
+DSP Report: register kernel_V_6_1_reg is absorbed into DSP convolution_filtejbC_U31/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U31/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U31/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U31/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U31/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U31/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U31/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U31/convolution_filtejbC_DSP48_1_U/m is absorbed into DSP convolution_filtejbC_U31/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: Generating DSP add_ln68_40_reg_3260_reg, operation Mode is: (C+A''*B2)'.
+DSP Report: register kernel_V_6_0_reg is absorbed into DSP add_ln68_40_reg_3260_reg.
+DSP Report: register add_ln68_40_reg_3260_reg is absorbed into DSP add_ln68_40_reg_3260_reg.
+DSP Report: register add_ln68_40_reg_3260_reg is absorbed into DSP add_ln68_40_reg_3260_reg.
+DSP Report: register add_ln68_40_reg_3260_reg is absorbed into DSP add_ln68_40_reg_3260_reg.
+DSP Report: operator convolution_filteibs_U30/convolution_filteibs_DSP48_0_U/p is absorbed into DSP add_ln68_40_reg_3260_reg.
+DSP Report: operator convolution_filteibs_U30/convolution_filteibs_DSP48_0_U/m is absorbed into DSP add_ln68_40_reg_3260_reg.
+DSP Report: Generating DSP temp_V_42_fu_2267_p2, operation Mode is: A2*B2.
+DSP Report: register kernel_V_5_6_reg is absorbed into DSP temp_V_42_fu_2267_p2.
+DSP Report: register temp_V_42_fu_2267_p2 is absorbed into DSP temp_V_42_fu_2267_p2.
+DSP Report: operator temp_V_42_fu_2267_p2 is absorbed into DSP temp_V_42_fu_2267_p2.
+DSP Report: Generating DSP convolution_filtejbC_U29/convolution_filtejbC_DSP48_1_U/p, operation Mode is: C+A''*B2.
+DSP Report: register kernel_V_5_5_reg is absorbed into DSP convolution_filtejbC_U29/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U29/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U29/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U29/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U29/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U29/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U29/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U29/convolution_filtejbC_DSP48_1_U/m is absorbed into DSP convolution_filtejbC_U29/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: Generating DSP add_ln68_37_reg_3255_reg, operation Mode is: (C+A''*B2)'.
+DSP Report: register kernel_V_5_4_reg is absorbed into DSP add_ln68_37_reg_3255_reg.
+DSP Report: register add_ln68_37_reg_3255_reg is absorbed into DSP add_ln68_37_reg_3255_reg.
+DSP Report: register add_ln68_37_reg_3255_reg is absorbed into DSP add_ln68_37_reg_3255_reg.
+DSP Report: register add_ln68_37_reg_3255_reg is absorbed into DSP add_ln68_37_reg_3255_reg.
+DSP Report: operator convolution_filteibs_U28/convolution_filteibs_DSP48_0_U/p is absorbed into DSP add_ln68_37_reg_3255_reg.
+DSP Report: operator convolution_filteibs_U28/convolution_filteibs_DSP48_0_U/m is absorbed into DSP add_ln68_37_reg_3255_reg.
+DSP Report: Generating DSP temp_V_39_fu_2222_p2, operation Mode is: A''*B2.
+DSP Report: register kernel_V_5_3_reg is absorbed into DSP temp_V_39_fu_2222_p2.
+DSP Report: register temp_V_39_fu_2222_p2 is absorbed into DSP temp_V_39_fu_2222_p2.
+DSP Report: register temp_V_39_fu_2222_p2 is absorbed into DSP temp_V_39_fu_2222_p2.
+DSP Report: operator temp_V_39_fu_2222_p2 is absorbed into DSP temp_V_39_fu_2222_p2.
+DSP Report: Generating DSP convolution_filtejbC_U27/convolution_filtejbC_DSP48_1_U/p, operation Mode is: C+A''*B2.
+DSP Report: register kernel_V_5_2_reg is absorbed into DSP convolution_filtejbC_U27/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U27/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U27/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U27/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U27/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U27/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U27/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U27/convolution_filtejbC_DSP48_1_U/m is absorbed into DSP convolution_filtejbC_U27/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: Generating DSP add_ln68_35_reg_3250_reg, operation Mode is: (C+A''*B2)'.
+DSP Report: register kernel_V_5_1_reg is absorbed into DSP add_ln68_35_reg_3250_reg.
+DSP Report: register add_ln68_35_reg_3250_reg is absorbed into DSP add_ln68_35_reg_3250_reg.
+DSP Report: register add_ln68_35_reg_3250_reg is absorbed into DSP add_ln68_35_reg_3250_reg.
+DSP Report: register add_ln68_35_reg_3250_reg is absorbed into DSP add_ln68_35_reg_3250_reg.
+DSP Report: operator convolution_filteibs_U26/convolution_filteibs_DSP48_0_U/p is absorbed into DSP add_ln68_35_reg_3250_reg.
+DSP Report: operator convolution_filteibs_U26/convolution_filteibs_DSP48_0_U/m is absorbed into DSP add_ln68_35_reg_3250_reg.
+DSP Report: Generating DSP temp_V_36_fu_2176_p2, operation Mode is: A''*B2.
+DSP Report: register kernel_V_5_0_reg is absorbed into DSP temp_V_36_fu_2176_p2.
+DSP Report: register temp_V_36_fu_2176_p2 is absorbed into DSP temp_V_36_fu_2176_p2.
+DSP Report: register temp_V_36_fu_2176_p2 is absorbed into DSP temp_V_36_fu_2176_p2.
+DSP Report: operator temp_V_36_fu_2176_p2 is absorbed into DSP temp_V_36_fu_2176_p2.
+DSP Report: Generating DSP convolution_filtejbC_U25/convolution_filtejbC_DSP48_1_U/p, operation Mode is: C+A2*B2.
+DSP Report: register kernel_V_4_6_reg is absorbed into DSP convolution_filtejbC_U25/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U25/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U25/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U25/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U25/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U25/convolution_filtejbC_DSP48_1_U/m is absorbed into DSP convolution_filtejbC_U25/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: Generating DSP add_ln68_31_reg_3245_reg, operation Mode is: (C+A''*B2)'.
+DSP Report: register kernel_V_4_5_reg is absorbed into DSP add_ln68_31_reg_3245_reg.
+DSP Report: register add_ln68_31_reg_3245_reg is absorbed into DSP add_ln68_31_reg_3245_reg.
+DSP Report: register add_ln68_31_reg_3245_reg is absorbed into DSP add_ln68_31_reg_3245_reg.
+DSP Report: register add_ln68_31_reg_3245_reg is absorbed into DSP add_ln68_31_reg_3245_reg.
+DSP Report: operator convolution_filteibs_U24/convolution_filteibs_DSP48_0_U/p is absorbed into DSP add_ln68_31_reg_3245_reg.
+DSP Report: operator convolution_filteibs_U24/convolution_filteibs_DSP48_0_U/m is absorbed into DSP add_ln68_31_reg_3245_reg.
+DSP Report: Generating DSP temp_V_33_fu_2131_p2, operation Mode is: A''*B2.
+DSP Report: register kernel_V_4_4_reg is absorbed into DSP temp_V_33_fu_2131_p2.
+DSP Report: register temp_V_33_fu_2131_p2 is absorbed into DSP temp_V_33_fu_2131_p2.
+DSP Report: register temp_V_33_fu_2131_p2 is absorbed into DSP temp_V_33_fu_2131_p2.
+DSP Report: operator temp_V_33_fu_2131_p2 is absorbed into DSP temp_V_33_fu_2131_p2.
+DSP Report: Generating DSP convolution_filtejbC_U23/convolution_filtejbC_DSP48_1_U/p, operation Mode is: C+A''*B2.
+DSP Report: register kernel_V_4_3_reg is absorbed into DSP convolution_filtejbC_U23/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U23/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U23/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U23/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U23/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U23/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U23/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U23/convolution_filtejbC_DSP48_1_U/m is absorbed into DSP convolution_filtejbC_U23/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: Generating DSP add_ln68_29_reg_3240_reg, operation Mode is: (C+A''*B2)'.
+DSP Report: register kernel_V_4_2_reg is absorbed into DSP add_ln68_29_reg_3240_reg.
+DSP Report: register add_ln68_29_reg_3240_reg is absorbed into DSP add_ln68_29_reg_3240_reg.
+DSP Report: register add_ln68_29_reg_3240_reg is absorbed into DSP add_ln68_29_reg_3240_reg.
+DSP Report: register add_ln68_29_reg_3240_reg is absorbed into DSP add_ln68_29_reg_3240_reg.
+DSP Report: operator convolution_filteibs_U22/convolution_filteibs_DSP48_0_U/p is absorbed into DSP add_ln68_29_reg_3240_reg.
+DSP Report: operator convolution_filteibs_U22/convolution_filteibs_DSP48_0_U/m is absorbed into DSP add_ln68_29_reg_3240_reg.
+DSP Report: Generating DSP temp_V_30_fu_2085_p2, operation Mode is: A''*B2.
+DSP Report: register kernel_V_4_1_reg is absorbed into DSP temp_V_30_fu_2085_p2.
+DSP Report: register temp_V_30_fu_2085_p2 is absorbed into DSP temp_V_30_fu_2085_p2.
+DSP Report: register temp_V_30_fu_2085_p2 is absorbed into DSP temp_V_30_fu_2085_p2.
+DSP Report: operator temp_V_30_fu_2085_p2 is absorbed into DSP temp_V_30_fu_2085_p2.
+DSP Report: Generating DSP convolution_filtejbC_U21/convolution_filtejbC_DSP48_1_U/p, operation Mode is: C+A''*B2.
+DSP Report: register kernel_V_4_0_reg is absorbed into DSP convolution_filtejbC_U21/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U21/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U21/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U21/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U21/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U21/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U21/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U21/convolution_filtejbC_DSP48_1_U/m is absorbed into DSP convolution_filtejbC_U21/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: Generating DSP add_ln68_26_reg_3235_reg, operation Mode is: (C+A2*B2)'.
+DSP Report: register kernel_V_3_6_reg is absorbed into DSP add_ln68_26_reg_3235_reg.
+DSP Report: register add_ln68_26_reg_3235_reg is absorbed into DSP add_ln68_26_reg_3235_reg.
+DSP Report: register add_ln68_26_reg_3235_reg is absorbed into DSP add_ln68_26_reg_3235_reg.
+DSP Report: operator convolution_filteibs_U20/convolution_filteibs_DSP48_0_U/p is absorbed into DSP add_ln68_26_reg_3235_reg.
+DSP Report: operator convolution_filteibs_U20/convolution_filteibs_DSP48_0_U/m is absorbed into DSP add_ln68_26_reg_3235_reg.
+DSP Report: Generating DSP temp_V_27_fu_2039_p2, operation Mode is: A''*B2.
+DSP Report: register kernel_V_3_5_reg is absorbed into DSP temp_V_27_fu_2039_p2.
+DSP Report: register temp_V_27_fu_2039_p2 is absorbed into DSP temp_V_27_fu_2039_p2.
+DSP Report: register temp_V_27_fu_2039_p2 is absorbed into DSP temp_V_27_fu_2039_p2.
+DSP Report: operator temp_V_27_fu_2039_p2 is absorbed into DSP temp_V_27_fu_2039_p2.
+DSP Report: Generating DSP convolution_filtejbC_U19/convolution_filtejbC_DSP48_1_U/p, operation Mode is: C+A''*B2.
+DSP Report: register kernel_V_3_4_reg is absorbed into DSP convolution_filtejbC_U19/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U19/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U19/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U19/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U19/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U19/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U19/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U19/convolution_filtejbC_DSP48_1_U/m is absorbed into DSP convolution_filtejbC_U19/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: Generating DSP add_ln68_24_reg_3230_reg, operation Mode is: (C+A''*B2)'.
+DSP Report: register kernel_V_3_3_reg is absorbed into DSP add_ln68_24_reg_3230_reg.
+DSP Report: register add_ln68_24_reg_3230_reg is absorbed into DSP add_ln68_24_reg_3230_reg.
+DSP Report: register add_ln68_24_reg_3230_reg is absorbed into DSP add_ln68_24_reg_3230_reg.
+DSP Report: register add_ln68_24_reg_3230_reg is absorbed into DSP add_ln68_24_reg_3230_reg.
+DSP Report: operator convolution_filteibs_U18/convolution_filteibs_DSP48_0_U/p is absorbed into DSP add_ln68_24_reg_3230_reg.
+DSP Report: operator convolution_filteibs_U18/convolution_filteibs_DSP48_0_U/m is absorbed into DSP add_ln68_24_reg_3230_reg.
+DSP Report: Generating DSP temp_V_24_fu_1994_p2, operation Mode is: A''*B2.
+DSP Report: register kernel_V_3_2_reg is absorbed into DSP temp_V_24_fu_1994_p2.
+DSP Report: register temp_V_24_fu_1994_p2 is absorbed into DSP temp_V_24_fu_1994_p2.
+DSP Report: register temp_V_24_fu_1994_p2 is absorbed into DSP temp_V_24_fu_1994_p2.
+DSP Report: operator temp_V_24_fu_1994_p2 is absorbed into DSP temp_V_24_fu_1994_p2.
+DSP Report: Generating DSP convolution_filtejbC_U17/convolution_filtejbC_DSP48_1_U/p, operation Mode is: C+A''*B2.
+DSP Report: register kernel_V_3_1_reg is absorbed into DSP convolution_filtejbC_U17/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U17/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U17/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U17/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U17/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U17/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U17/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U17/convolution_filtejbC_DSP48_1_U/m is absorbed into DSP convolution_filtejbC_U17/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: Generating DSP add_ln68_19_reg_3225_reg, operation Mode is: (C+A''*B2)'.
+DSP Report: register kernel_V_3_0_reg is absorbed into DSP add_ln68_19_reg_3225_reg.
+DSP Report: register add_ln68_19_reg_3225_reg is absorbed into DSP add_ln68_19_reg_3225_reg.
+DSP Report: register add_ln68_19_reg_3225_reg is absorbed into DSP add_ln68_19_reg_3225_reg.
+DSP Report: register add_ln68_19_reg_3225_reg is absorbed into DSP add_ln68_19_reg_3225_reg.
+DSP Report: operator convolution_filteibs_U16/convolution_filteibs_DSP48_0_U/p is absorbed into DSP add_ln68_19_reg_3225_reg.
+DSP Report: operator convolution_filteibs_U16/convolution_filteibs_DSP48_0_U/m is absorbed into DSP add_ln68_19_reg_3225_reg.
+DSP Report: Generating DSP temp_V_21_fu_1948_p2, operation Mode is: A2*B2.
+DSP Report: register kernel_V_2_6_reg is absorbed into DSP temp_V_21_fu_1948_p2.
+DSP Report: register temp_V_21_fu_1948_p2 is absorbed into DSP temp_V_21_fu_1948_p2.
+DSP Report: operator temp_V_21_fu_1948_p2 is absorbed into DSP temp_V_21_fu_1948_p2.
+DSP Report: Generating DSP convolution_filtejbC_U15/convolution_filtejbC_DSP48_1_U/p, operation Mode is: C+A''*B2.
+DSP Report: register kernel_V_2_5_reg is absorbed into DSP convolution_filtejbC_U15/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U15/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U15/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U15/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U15/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U15/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U15/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U15/convolution_filtejbC_DSP48_1_U/m is absorbed into DSP convolution_filtejbC_U15/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: Generating DSP add_ln68_17_reg_3220_reg, operation Mode is: (C+A''*B2)'.
+DSP Report: register kernel_V_2_4_reg is absorbed into DSP add_ln68_17_reg_3220_reg.
+DSP Report: register add_ln68_17_reg_3220_reg is absorbed into DSP add_ln68_17_reg_3220_reg.
+DSP Report: register add_ln68_17_reg_3220_reg is absorbed into DSP add_ln68_17_reg_3220_reg.
+DSP Report: register add_ln68_17_reg_3220_reg is absorbed into DSP add_ln68_17_reg_3220_reg.
+DSP Report: operator convolution_filteibs_U14/convolution_filteibs_DSP48_0_U/p is absorbed into DSP add_ln68_17_reg_3220_reg.
+DSP Report: operator convolution_filteibs_U14/convolution_filteibs_DSP48_0_U/m is absorbed into DSP add_ln68_17_reg_3220_reg.
+DSP Report: Generating DSP temp_V_18_fu_1903_p2, operation Mode is: A''*B2.
+DSP Report: register kernel_V_2_3_reg is absorbed into DSP temp_V_18_fu_1903_p2.
+DSP Report: register temp_V_18_fu_1903_p2 is absorbed into DSP temp_V_18_fu_1903_p2.
+DSP Report: register temp_V_18_fu_1903_p2 is absorbed into DSP temp_V_18_fu_1903_p2.
+DSP Report: operator temp_V_18_fu_1903_p2 is absorbed into DSP temp_V_18_fu_1903_p2.
+DSP Report: Generating DSP convolution_filtejbC_U13/convolution_filtejbC_DSP48_1_U/p, operation Mode is: C+A''*B2.
+DSP Report: register kernel_V_2_2_reg is absorbed into DSP convolution_filtejbC_U13/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U13/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U13/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U13/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U13/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U13/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U13/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U13/convolution_filtejbC_DSP48_1_U/m is absorbed into DSP convolution_filtejbC_U13/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: Generating DSP add_ln68_14_reg_3215_reg, operation Mode is: (C+A''*B2)'.
+DSP Report: register kernel_V_2_1_reg is absorbed into DSP add_ln68_14_reg_3215_reg.
+DSP Report: register add_ln68_14_reg_3215_reg is absorbed into DSP add_ln68_14_reg_3215_reg.
+DSP Report: register add_ln68_14_reg_3215_reg is absorbed into DSP add_ln68_14_reg_3215_reg.
+DSP Report: register add_ln68_14_reg_3215_reg is absorbed into DSP add_ln68_14_reg_3215_reg.
+DSP Report: operator convolution_filteibs_U12/convolution_filteibs_DSP48_0_U/p is absorbed into DSP add_ln68_14_reg_3215_reg.
+DSP Report: operator convolution_filteibs_U12/convolution_filteibs_DSP48_0_U/m is absorbed into DSP add_ln68_14_reg_3215_reg.
+DSP Report: Generating DSP temp_V_15_fu_1857_p2, operation Mode is: A''*B2.
+DSP Report: register kernel_V_2_0_reg is absorbed into DSP temp_V_15_fu_1857_p2.
+DSP Report: register temp_V_15_fu_1857_p2 is absorbed into DSP temp_V_15_fu_1857_p2.
+DSP Report: register temp_V_15_fu_1857_p2 is absorbed into DSP temp_V_15_fu_1857_p2.
+DSP Report: operator temp_V_15_fu_1857_p2 is absorbed into DSP temp_V_15_fu_1857_p2.
+DSP Report: Generating DSP convolution_filtejbC_U11/convolution_filtejbC_DSP48_1_U/p, operation Mode is: C+A2*B2.
+DSP Report: register kernel_V_1_6_reg is absorbed into DSP convolution_filtejbC_U11/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U11/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U11/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U11/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U11/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U11/convolution_filtejbC_DSP48_1_U/m is absorbed into DSP convolution_filtejbC_U11/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: Generating DSP add_ln68_12_reg_3210_reg, operation Mode is: (C+A''*B2)'.
+DSP Report: register kernel_V_1_5_reg is absorbed into DSP add_ln68_12_reg_3210_reg.
+DSP Report: register add_ln68_12_reg_3210_reg is absorbed into DSP add_ln68_12_reg_3210_reg.
+DSP Report: register add_ln68_12_reg_3210_reg is absorbed into DSP add_ln68_12_reg_3210_reg.
+DSP Report: register add_ln68_12_reg_3210_reg is absorbed into DSP add_ln68_12_reg_3210_reg.
+DSP Report: operator convolution_filteibs_U10/convolution_filteibs_DSP48_0_U/p is absorbed into DSP add_ln68_12_reg_3210_reg.
+DSP Report: operator convolution_filteibs_U10/convolution_filteibs_DSP48_0_U/m is absorbed into DSP add_ln68_12_reg_3210_reg.
+DSP Report: Generating DSP temp_V_12_fu_1812_p2, operation Mode is: A''*B2.
+DSP Report: register kernel_V_1_4_reg is absorbed into DSP temp_V_12_fu_1812_p2.
+DSP Report: register temp_V_12_fu_1812_p2 is absorbed into DSP temp_V_12_fu_1812_p2.
+DSP Report: register temp_V_12_fu_1812_p2 is absorbed into DSP temp_V_12_fu_1812_p2.
+DSP Report: operator temp_V_12_fu_1812_p2 is absorbed into DSP temp_V_12_fu_1812_p2.
+DSP Report: Generating DSP convolution_filtejbC_U9/convolution_filtejbC_DSP48_1_U/p, operation Mode is: C+A''*B2.
+DSP Report: register kernel_V_1_3_reg is absorbed into DSP convolution_filtejbC_U9/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U9/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U9/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U9/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U9/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U9/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U9/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U9/convolution_filtejbC_DSP48_1_U/m is absorbed into DSP convolution_filtejbC_U9/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: Generating DSP add_ln68_8_reg_3205_reg, operation Mode is: (C+A''*B2)'.
+DSP Report: register kernel_V_1_2_reg is absorbed into DSP add_ln68_8_reg_3205_reg.
+DSP Report: register add_ln68_8_reg_3205_reg is absorbed into DSP add_ln68_8_reg_3205_reg.
+DSP Report: register add_ln68_8_reg_3205_reg is absorbed into DSP add_ln68_8_reg_3205_reg.
+DSP Report: register add_ln68_8_reg_3205_reg is absorbed into DSP add_ln68_8_reg_3205_reg.
+DSP Report: operator convolution_filteibs_U8/convolution_filteibs_DSP48_0_U/p is absorbed into DSP add_ln68_8_reg_3205_reg.
+DSP Report: operator convolution_filteibs_U8/convolution_filteibs_DSP48_0_U/m is absorbed into DSP add_ln68_8_reg_3205_reg.
+DSP Report: Generating DSP temp_V_9_fu_1766_p2, operation Mode is: A''*B2.
+DSP Report: register kernel_V_1_1_reg is absorbed into DSP temp_V_9_fu_1766_p2.
+DSP Report: register temp_V_9_fu_1766_p2 is absorbed into DSP temp_V_9_fu_1766_p2.
+DSP Report: register temp_V_9_fu_1766_p2 is absorbed into DSP temp_V_9_fu_1766_p2.
+DSP Report: operator temp_V_9_fu_1766_p2 is absorbed into DSP temp_V_9_fu_1766_p2.
+DSP Report: Generating DSP convolution_filtejbC_U7/convolution_filtejbC_DSP48_1_U/p, operation Mode is: C+A''*B2.
+DSP Report: register kernel_V_1_0_reg is absorbed into DSP convolution_filtejbC_U7/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U7/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U7/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U7/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U7/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U7/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U7/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U7/convolution_filtejbC_DSP48_1_U/m is absorbed into DSP convolution_filtejbC_U7/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: Generating DSP add_ln68_6_reg_3200_reg, operation Mode is: (C+A2*B2)'.
+DSP Report: register kernel_V_0_6_reg is absorbed into DSP add_ln68_6_reg_3200_reg.
+DSP Report: register add_ln68_6_reg_3200_reg is absorbed into DSP add_ln68_6_reg_3200_reg.
+DSP Report: register add_ln68_6_reg_3200_reg is absorbed into DSP add_ln68_6_reg_3200_reg.
+DSP Report: operator convolution_filteibs_U6/convolution_filteibs_DSP48_0_U/p is absorbed into DSP add_ln68_6_reg_3200_reg.
+DSP Report: operator convolution_filteibs_U6/convolution_filteibs_DSP48_0_U/m is absorbed into DSP add_ln68_6_reg_3200_reg.
+DSP Report: Generating DSP temp_V_6_fu_1720_p2, operation Mode is: A''*B2.
+DSP Report: register kernel_V_0_5_reg is absorbed into DSP temp_V_6_fu_1720_p2.
+DSP Report: register temp_V_6_fu_1720_p2 is absorbed into DSP temp_V_6_fu_1720_p2.
+DSP Report: register temp_V_6_fu_1720_p2 is absorbed into DSP temp_V_6_fu_1720_p2.
+DSP Report: operator temp_V_6_fu_1720_p2 is absorbed into DSP temp_V_6_fu_1720_p2.
+DSP Report: Generating DSP convolution_filtejbC_U5/convolution_filtejbC_DSP48_1_U/p, operation Mode is: C+A''*B2.
+DSP Report: register kernel_V_0_4_reg is absorbed into DSP convolution_filtejbC_U5/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U5/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U5/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U5/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U5/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U5/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U5/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U5/convolution_filtejbC_DSP48_1_U/m is absorbed into DSP convolution_filtejbC_U5/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: Generating DSP add_ln68_3_reg_3195_reg, operation Mode is: (C+A''*B2)'.
+DSP Report: register kernel_V_0_3_reg is absorbed into DSP add_ln68_3_reg_3195_reg.
+DSP Report: register add_ln68_3_reg_3195_reg is absorbed into DSP add_ln68_3_reg_3195_reg.
+DSP Report: register add_ln68_3_reg_3195_reg is absorbed into DSP add_ln68_3_reg_3195_reg.
+DSP Report: register add_ln68_3_reg_3195_reg is absorbed into DSP add_ln68_3_reg_3195_reg.
+DSP Report: operator convolution_filteibs_U4/convolution_filteibs_DSP48_0_U/p is absorbed into DSP add_ln68_3_reg_3195_reg.
+DSP Report: operator convolution_filteibs_U4/convolution_filteibs_DSP48_0_U/m is absorbed into DSP add_ln68_3_reg_3195_reg.
+DSP Report: Generating DSP temp_V_3_fu_1675_p2, operation Mode is: A''*B2.
+DSP Report: register kernel_V_0_2_reg is absorbed into DSP temp_V_3_fu_1675_p2.
+DSP Report: register temp_V_3_fu_1675_p2 is absorbed into DSP temp_V_3_fu_1675_p2.
+DSP Report: register temp_V_3_fu_1675_p2 is absorbed into DSP temp_V_3_fu_1675_p2.
+DSP Report: operator temp_V_3_fu_1675_p2 is absorbed into DSP temp_V_3_fu_1675_p2.
+DSP Report: Generating DSP convolution_filtejbC_U3/convolution_filtejbC_DSP48_1_U/p, operation Mode is: C+A''*B2.
+DSP Report: register kernel_V_0_1_reg is absorbed into DSP convolution_filtejbC_U3/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U3/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U3/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: register convolution_filtejbC_U3/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U3/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U3/convolution_filtejbC_DSP48_1_U/p is absorbed into DSP convolution_filtejbC_U3/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: operator convolution_filtejbC_U3/convolution_filtejbC_DSP48_1_U/m is absorbed into DSP convolution_filtejbC_U3/convolution_filtejbC_DSP48_1_U/p.
+DSP Report: Generating DSP add_ln68_1_reg_3190_reg, operation Mode is: (C+A''*B2)'.
+DSP Report: register kernel_V_0_0_reg is absorbed into DSP add_ln68_1_reg_3190_reg.
+DSP Report: register add_ln68_1_reg_3190_reg is absorbed into DSP add_ln68_1_reg_3190_reg.
+DSP Report: register add_ln68_1_reg_3190_reg is absorbed into DSP add_ln68_1_reg_3190_reg.
+DSP Report: register add_ln68_1_reg_3190_reg is absorbed into DSP add_ln68_1_reg_3190_reg.
+DSP Report: operator convolution_filteibs_U2/convolution_filteibs_DSP48_0_U/p is absorbed into DSP add_ln68_1_reg_3190_reg.
+DSP Report: operator convolution_filteibs_U2/convolution_filteibs_DSP48_0_U/m is absorbed into DSP add_ln68_1_reg_3190_reg.
+WARNING: [Synth 8-7129] Port reset in module convolution_filtehbi is either unconnected or has no load
+INFO: [Synth 8-3971] The signal "inst/convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2389.910 ; gain = 674.250 ; free physical = 207 ; free virtual = 5266
+---------------------------------------------------------------------------------
+ Sort Area is  add_ln68_12_reg_3210_reg_13 : 0 0 : 618 618 : Used 1 time 100
+ Sort Area is  add_ln68_14_reg_3215_reg_16 : 0 0 : 618 618 : Used 1 time 100
+ Sort Area is  add_ln68_17_reg_3220_reg_1a : 0 0 : 618 618 : Used 1 time 100
+ Sort Area is  add_ln68_19_reg_3225_reg_1d : 0 0 : 618 618 : Used 1 time 100
+ Sort Area is  add_ln68_1_reg_3190_reg_4 : 0 0 : 618 618 : Used 1 time 100
+ Sort Area is  add_ln68_24_reg_3230_reg_20 : 0 0 : 618 618 : Used 1 time 100
+ Sort Area is  add_ln68_29_reg_3240_reg_26 : 0 0 : 618 618 : Used 1 time 100
+ Sort Area is  add_ln68_31_reg_3245_reg_29 : 0 0 : 618 618 : Used 1 time 100
+ Sort Area is  add_ln68_35_reg_3250_reg_2c : 0 0 : 618 618 : Used 1 time 100
+ Sort Area is  add_ln68_37_reg_3255_reg_2f : 0 0 : 618 618 : Used 1 time 100
+ Sort Area is  add_ln68_3_reg_3195_reg_8 : 0 0 : 618 618 : Used 1 time 100
+ Sort Area is  add_ln68_40_reg_3260_reg_32 : 0 0 : 618 618 : Used 1 time 100
+ Sort Area is  add_ln68_8_reg_3205_reg_f : 0 0 : 618 618 : Used 1 time 100
+ Sort Area is  add_ln68_26_reg_3235_reg_23 : 0 0 : 609 609 : Used 1 time 100
+ Sort Area is  add_ln68_6_reg_3200_reg_b : 0 0 : 609 609 : Used 1 time 100
+ Sort Area is  convolution_filtejbC_U13/convolution_filtejbC_DSP48_1_U/p_15 : 0 0 : 580 580 : Used 1 time 100
+ Sort Area is  convolution_filtejbC_U15/convolution_filtejbC_DSP48_1_U/p_19 : 0 0 : 580 580 : Used 1 time 100
+ Sort Area is  convolution_filtejbC_U17/convolution_filtejbC_DSP48_1_U/p_1c : 0 0 : 580 580 : Used 1 time 100
+ Sort Area is  convolution_filtejbC_U19/convolution_filtejbC_DSP48_1_U/p_1f : 0 0 : 580 580 : Used 1 time 100
+ Sort Area is  convolution_filtejbC_U21/convolution_filtejbC_DSP48_1_U/p_22 : 0 0 : 580 580 : Used 1 time 100
+ Sort Area is  convolution_filtejbC_U23/convolution_filtejbC_DSP48_1_U/p_25 : 0 0 : 580 580 : Used 1 time 100
+ Sort Area is  convolution_filtejbC_U27/convolution_filtejbC_DSP48_1_U/p_2b : 0 0 : 580 580 : Used 1 time 100
+ Sort Area is  convolution_filtejbC_U29/convolution_filtejbC_DSP48_1_U/p_2e : 0 0 : 580 580 : Used 1 time 100
+ Sort Area is  convolution_filtejbC_U3/convolution_filtejbC_DSP48_1_U/p_2 : 0 0 : 580 580 : Used 1 time 100
+ Sort Area is  convolution_filtejbC_U31/convolution_filtejbC_DSP48_1_U/p_31 : 0 0 : 580 580 : Used 1 time 100
+ Sort Area is  convolution_filtejbC_U32/convolution_filtejbC_DSP48_1_U/p_34 : 0 0 : 580 580 : Used 1 time 100
+ Sort Area is  convolution_filtejbC_U33/convolution_filtejbC_DSP48_1_U/p_36 : 0 0 : 580 580 : Used 1 time 100
+ Sort Area is  convolution_filtejbC_U5/convolution_filtejbC_DSP48_1_U/p_7 : 0 0 : 580 580 : Used 1 time 100
+ Sort Area is  convolution_filtejbC_U7/convolution_filtejbC_DSP48_1_U/p_a : 0 0 : 580 580 : Used 1 time 100
+ Sort Area is  convolution_filtejbC_U9/convolution_filtejbC_DSP48_1_U/p_e : 0 0 : 580 580 : Used 1 time 100
+ Sort Area is  convolution_filtejbC_U11/convolution_filtejbC_DSP48_1_U/p_11 : 0 0 : 571 571 : Used 1 time 100
+ Sort Area is  convolution_filtejbC_U25/convolution_filtejbC_DSP48_1_U/p_28 : 0 0 : 571 571 : Used 1 time 100
+ Sort Area is  temp_V_12_fu_1812_p2_d : 0 0 : 528 528 : Used 1 time 0
+ Sort Area is  temp_V_15_fu_1857_p2_10 : 0 0 : 528 528 : Used 1 time 0
+ Sort Area is  temp_V_18_fu_1903_p2_14 : 0 0 : 528 528 : Used 1 time 0
+ Sort Area is  temp_V_24_fu_1994_p2_1b : 0 0 : 528 528 : Used 1 time 0
+ Sort Area is  temp_V_27_fu_2039_p2_1e : 0 0 : 528 528 : Used 1 time 0
+ Sort Area is  temp_V_30_fu_2085_p2_21 : 0 0 : 528 528 : Used 1 time 0
+ Sort Area is  temp_V_33_fu_2131_p2_24 : 0 0 : 528 528 : Used 1 time 0
+ Sort Area is  temp_V_36_fu_2176_p2_27 : 0 0 : 528 528 : Used 1 time 0
+ Sort Area is  temp_V_39_fu_2222_p2_2a : 0 0 : 528 528 : Used 1 time 0
+ Sort Area is  temp_V_3_fu_1675_p2_0 : 0 0 : 528 528 : Used 1 time 0
+ Sort Area is  temp_V_45_fu_2313_p2_30 : 0 0 : 528 528 : Used 1 time 0
+ Sort Area is  temp_V_47_fu_2347_p2_33 : 0 0 : 528 528 : Used 1 time 0
+ Sort Area is  temp_V_6_fu_1720_p2_6 : 0 0 : 528 528 : Used 1 time 0
+ Sort Area is  temp_V_9_fu_1766_p2_9 : 0 0 : 528 528 : Used 1 time 0
+ Sort Area is  temp_V_21_fu_1948_p2_17 : 0 0 : 519 519 : Used 1 time 0
+ Sort Area is  temp_V_42_fu_2267_p2_2d : 0 0 : 519 519 : Used 1 time 0
+ Sort Area is  temp_V_49_fu_2380_p2_35 : 0 0 : 519 519 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                                                                   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | line_buffer_V_0_U/convolution_filtebkb_ram_U/ram_reg                         | 640 x 8(READ_FIRST)    | W |   | 640 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | line_buffer_V_1_U/convolution_filtebkb_ram_U/ram_reg                         | 640 x 8(READ_FIRST)    | W |   | 640 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | line_buffer_V_2_U/convolution_filtebkb_ram_U/ram_reg                         | 640 x 8(READ_FIRST)    | W |   | 640 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | line_buffer_V_3_U/convolution_filtebkb_ram_U/ram_reg                         | 640 x 8(READ_FIRST)    | W |   | 640 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | line_buffer_V_4_U/convolution_filtebkb_ram_U/ram_reg                         | 640 x 8(READ_FIRST)    | W |   | 640 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | line_buffer_V_5_U/convolution_filtebkb_ram_U/ram_reg                         | 640 x 8(READ_FIRST)    | W |   | 640 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg | 13 x 32(READ_FIRST)    | W | R | 13 x 32(READ_FIRST)    | W | R | Port A and B     | 0      | 1      | 
++------------+------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|convolution_filter | A2*B2       | 9      | 8      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B2    | 9      | 8      | 16     | -      | 17     | 2    | 1    | 0    | -    | -     | 0    | 0    | 
+|convolution_filter | A''*B2      | 9      | 8      | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B2    | 9      | 8      | 16     | -      | 17     | 2    | 1    | 0    | -    | -     | 0    | 0    | 
+|convolution_filter | A''*B2      | 9      | 8      | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B2    | 9      | 8      | 16     | -      | 17     | 2    | 1    | 0    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B2)' | 9      | 8      | 17     | -      | 18     | 2    | 1    | 0    | -    | -     | 0    | 1    | 
+|convolution_filter | A2*B2       | 9      | 8      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B2    | 9      | 8      | 16     | -      | 17     | 2    | 1    | 0    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B2)' | 9      | 8      | 17     | -      | 18     | 2    | 1    | 0    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B2      | 9      | 8      | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B2    | 9      | 8      | 16     | -      | 17     | 2    | 1    | 0    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B2)' | 9      | 8      | 17     | -      | 18     | 2    | 1    | 0    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B2      | 9      | 8      | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A2*B2     | 9      | 8      | 16     | -      | 17     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B2)' | 9      | 8      | 17     | -      | 18     | 2    | 1    | 0    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B2      | 9      | 8      | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B2    | 9      | 8      | 16     | -      | 17     | 2    | 1    | 0    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B2)' | 9      | 8      | 17     | -      | 18     | 2    | 1    | 0    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B2      | 9      | 8      | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B2    | 9      | 8      | 16     | -      | 17     | 2    | 1    | 0    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A2*B2)'  | 9      | 8      | 17     | -      | 18     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B2      | 9      | 8      | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B2    | 9      | 8      | 16     | -      | 17     | 2    | 1    | 0    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B2)' | 9      | 8      | 17     | -      | 18     | 2    | 1    | 0    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B2      | 9      | 8      | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B2    | 9      | 8      | 16     | -      | 17     | 2    | 1    | 0    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B2)' | 9      | 8      | 17     | -      | 18     | 2    | 1    | 0    | -    | -     | 0    | 1    | 
+|convolution_filter | A2*B2       | 9      | 8      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B2    | 9      | 8      | 16     | -      | 17     | 2    | 1    | 0    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B2)' | 9      | 8      | 17     | -      | 18     | 2    | 1    | 0    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B2      | 9      | 8      | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B2    | 9      | 8      | 16     | -      | 17     | 2    | 1    | 0    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B2)' | 9      | 8      | 17     | -      | 18     | 2    | 1    | 0    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B2      | 9      | 8      | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A2*B2     | 9      | 8      | 16     | -      | 17     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B2)' | 9      | 8      | 17     | -      | 18     | 2    | 1    | 0    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B2      | 9      | 8      | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B2    | 9      | 8      | 16     | -      | 17     | 2    | 1    | 0    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B2)' | 9      | 8      | 17     | -      | 18     | 2    | 1    | 0    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B2      | 9      | 8      | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B2    | 9      | 8      | 16     | -      | 17     | 2    | 1    | 0    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A2*B2)'  | 9      | 8      | 17     | -      | 18     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B2      | 9      | 8      | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B2    | 9      | 8      | 16     | -      | 17     | 2    | 1    | 0    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B2)' | 9      | 8      | 17     | -      | 18     | 2    | 1    | 0    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B2      | 9      | 8      | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B2    | 9      | 8      | 16     | -      | 17     | 2    | 1    | 0    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B2)' | 9      | 8      | 17     | -      | 18     | 2    | 1    | 0    | -    | -     | 0    | 1    | 
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2389.910 ; gain = 674.250 ; free physical = 490 ; free virtual = 5551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 2389.910 ; gain = 674.250 ; free physical = 470 ; free virtual = 5522
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                                                                   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | line_buffer_V_0_U/convolution_filtebkb_ram_U/ram_reg                         | 640 x 8(READ_FIRST)    | W |   | 640 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | line_buffer_V_1_U/convolution_filtebkb_ram_U/ram_reg                         | 640 x 8(READ_FIRST)    | W |   | 640 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | line_buffer_V_2_U/convolution_filtebkb_ram_U/ram_reg                         | 640 x 8(READ_FIRST)    | W |   | 640 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | line_buffer_V_3_U/convolution_filtebkb_ram_U/ram_reg                         | 640 x 8(READ_FIRST)    | W |   | 640 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | line_buffer_V_4_U/convolution_filtebkb_ram_U/ram_reg                         | 640 x 8(READ_FIRST)    | W |   | 640 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | line_buffer_V_5_U/convolution_filtebkb_ram_U/ram_reg                         | 640 x 8(READ_FIRST)    | W |   | 640 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg | 13 x 32(READ_FIRST)    | W | R | 13 x 32(READ_FIRST)    | W | R | Port A and B     | 0      | 1      | 
++------------+------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_V_0_U/convolution_filtebkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_V_1_U/convolution_filtebkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_V_2_U/convolution_filtebkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_V_3_U/convolution_filtebkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_V_4_U/convolution_filtebkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_V_5_U/convolution_filtebkb_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 2389.910 ; gain = 674.250 ; free physical = 434 ; free virtual = 5516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:44 . Memory (MB): peak = 2389.910 ; gain = 674.250 ; free physical = 2191 ; free virtual = 7287
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:44 . Memory (MB): peak = 2389.910 ; gain = 674.250 ; free physical = 2188 ; free virtual = 7284
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 2389.910 ; gain = 674.250 ; free physical = 2167 ; free virtual = 7264
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 2389.910 ; gain = 674.250 ; free physical = 2165 ; free virtual = 7262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 2389.910 ; gain = 674.250 ; free physical = 2176 ; free virtual = 7273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 2389.910 ; gain = 674.250 ; free physical = 2176 ; free virtual = 7273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------------+-------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name        | RTL Name                                                                                                          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------------+-------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[1].dividend_tmp_reg[2][22]   | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[2].dividend_tmp_reg[3][22]   | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[3].dividend_tmp_reg[4][22]   | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[4].dividend_tmp_reg[5][22]   | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[5].dividend_tmp_reg[6][22]   | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[6].dividend_tmp_reg[7][22]   | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[7].dividend_tmp_reg[8][22]   | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[8].dividend_tmp_reg[9][22]   | 10     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[9].dividend_tmp_reg[10][22]  | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[10].dividend_tmp_reg[11][22] | 12     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[11].dividend_tmp_reg[12][22] | 13     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[12].dividend_tmp_reg[13][22] | 14     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[13].dividend_tmp_reg[14][22] | 15     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[14].dividend_tmp_reg[15][22] | 16     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[15].dividend_tmp_reg[16][22] | 17     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[16].dividend_tmp_reg[17][22] | 18     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[17].dividend_tmp_reg[18][22] | 19     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[18].dividend_tmp_reg[19][22] | 20     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[19].dividend_tmp_reg[20][22] | 21     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[20].dividend_tmp_reg[21][22] | 22     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[21].dividend_tmp_reg[22][22] | 23     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[22].dividend_tmp_reg[23][7]  | 8      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[22].dividend_tmp_reg[23][6]  | 7      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[22].dividend_tmp_reg[23][5]  | 6      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[22].dividend_tmp_reg[23][4]  | 5      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[22].dividend_tmp_reg[23][3]  | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|convolution_filter | convolution_filtehbi_U1/convolution_filtehbi_div_U/convolution_filtehbi_div_u_0/loop[22].sign_tmp_reg[23][1]      | 24     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|convolution_filter | and_ln164_reg_3124_pp0_iter29_reg_reg[0]                                                                          | 27     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|convolution_filter | kernel_off_V_load_reg_3185_pp0_iter29_reg_reg[7]                                                                  | 27     | 8     | NO           | NO                 | YES               | 0      | 8       | 
++-------------------+-------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|convolution_filter | A'*B'       | 8      | 18     | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | A''*B'      | 8      | 18     | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | A''*B'      | 8      | 18     | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B')' | 8      | 18     | 48     | -      | 18     | 2    | 1    | 1    | -    | -     | 0    | 1    | 
+|convolution_filter | A'*B'       | 8      | 18     | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B')' | 8      | 18     | 48     | -      | 18     | 2    | 1    | 1    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B'      | 8      | 18     | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B')' | 8      | 18     | 48     | -      | 18     | 2    | 1    | 1    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B'      | 8      | 18     | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B')' | 8      | 18     | 48     | -      | 18     | 2    | 1    | 1    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B'      | 8      | 18     | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B')' | 8      | 18     | 48     | -      | 18     | 2    | 1    | 1    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B'      | 8      | 18     | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A'*B')'  | 8      | 18     | 48     | -      | 18     | 1    | 1    | 1    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B'      | 8      | 18     | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B')' | 8      | 18     | 48     | -      | 18     | 2    | 1    | 1    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B'      | 8      | 18     | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B')' | 8      | 18     | 48     | -      | 18     | 2    | 1    | 1    | -    | -     | 0    | 1    | 
+|convolution_filter | A'*B'       | 8      | 18     | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B')' | 8      | 18     | 48     | -      | 18     | 2    | 1    | 1    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B'      | 8      | 18     | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B')' | 8      | 18     | 48     | -      | 18     | 2    | 1    | 1    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B'      | 8      | 18     | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B')' | 8      | 18     | 48     | -      | 18     | 2    | 1    | 1    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B'      | 8      | 18     | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B')' | 8      | 18     | 48     | -      | 18     | 2    | 1    | 1    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B'      | 8      | 18     | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A'*B')'  | 8      | 18     | 48     | -      | 18     | 1    | 1    | 1    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B'      | 8      | 18     | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B')' | 8      | 18     | 48     | -      | 18     | 2    | 1    | 1    | -    | -     | 0    | 1    | 
+|convolution_filter | A''*B'      | 8      | 18     | -      | -      | 17     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|convolution_filter | (C+A''*B')' | 8      | 18     | 48     | -      | 18     | 2    | 1    | 1    | -    | -     | 0    | 1    | 
+|convolution_filter | C+A'*B'     | 8      | 18     | 48     | -      | 17     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B'    | 8      | 18     | 48     | -      | 17     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B'    | 8      | 18     | 48     | -      | 17     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B'    | 8      | 18     | 48     | -      | 17     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B'    | 8      | 18     | 48     | -      | 17     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B'    | 8      | 18     | 48     | -      | 17     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B'    | 8      | 18     | 48     | -      | 17     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A'*B'     | 8      | 18     | 48     | -      | 17     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B'    | 8      | 18     | 48     | -      | 17     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B'    | 8      | 18     | 48     | -      | 17     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B'    | 8      | 18     | 48     | -      | 17     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B'    | 8      | 18     | 48     | -      | 17     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B'    | 8      | 18     | 48     | -      | 17     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B'    | 8      | 18     | 48     | -      | 17     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B'    | 8      | 18     | 48     | -      | 17     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B'    | 8      | 18     | 48     | -      | 17     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
+|convolution_filter | C+A''*B'    | 8      | 18     | 48     | -      | 17     | 2    | 1    | 1    | -    | -     | 0    | 0    | 
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   238|
+|2     |DSP48E1  |    49|
+|8     |LUT1     |   276|
+|9     |LUT2     |   582|
+|10    |LUT3     |   508|
+|11    |LUT4     |    37|
+|12    |LUT5     |    40|
+|13    |LUT6     |   159|
+|14    |MUXF7    |     8|
+|15    |RAMB18E1 |     6|
+|16    |RAMB36E1 |     1|
+|17    |SRL16E   |    20|
+|18    |SRLC32E  |    16|
+|19    |FDRE     |  1403|
+|20    |FDSE     |     4|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 2389.910 ; gain = 674.250 ; free physical = 2175 ; free virtual = 7273
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:42 . Memory (MB): peak = 2389.910 ; gain = 532.465 ; free physical = 2167 ; free virtual = 7266
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:45 . Memory (MB): peak = 2389.910 ; gain = 674.250 ; free physical = 2167 ; free virtual = 7265
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2389.910 ; gain = 0.000 ; free physical = 2498 ; free virtual = 7551
+INFO: [Netlist 29-17] Analyzing 302 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2389.910 ; gain = 0.000 ; free physical = 2318 ; free virtual = 7404
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7b0b0f65
+INFO: [Common 17-83] Releasing license: Synthesis
+58 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:51 . Memory (MB): peak = 2389.910 ; gain = 1022.750 ; free physical = 2296 ; free virtual = 7383
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1791.991; main = 1497.277; forked = 328.624
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3347.027; main = 2389.879; forked = 989.164
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2413.887 ; gain = 0.000 ; free physical = 2294 ; free virtual = 7381
+INFO: [Common 17-1381] The checkpoint '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_convolution_filter_0_2_synth_1/design_1_convolution_filter_0_2.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_convolution_filter_0_2, cache-ID = 87e4a97206b798c0
+INFO: [Coretcl 2-1174] Renamed 52 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2413.887 ; gain = 0.000 ; free physical = 4724 ; free virtual = 9822
+INFO: [Common 17-1381] The checkpoint '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/design_1_convolution_filter_0_2_synth_1/design_1_convolution_filter_0_2.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_convolution_filter_0_2_utilization_synth.rpt -pb design_1_convolution_filter_0_2_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 18 11:14:32 2024...
