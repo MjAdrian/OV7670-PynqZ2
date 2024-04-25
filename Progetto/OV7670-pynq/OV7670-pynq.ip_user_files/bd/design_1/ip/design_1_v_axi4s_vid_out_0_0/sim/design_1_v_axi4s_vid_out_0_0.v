@@ -1,21 +1,21 @@
-// (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// (c) Copyright 2022-2024 Advanced Micro Devices, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
-// of Xilinx, Inc. and is protected under U.S. and
-// international copyright and other intellectual property
-// laws.
+// of AMD and is protected under U.S. and international copyright
+// and other intellectual property laws.
 // 
 // DISCLAIMER
 // This disclaimer is not a license and does not grant any
 // rights to the materials distributed herewith. Except as
 // otherwise provided in a valid license issued to you by
-// Xilinx, and to the maximum extent permitted by applicable
+// AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
-// (2) Xilinx shall not be liable (whether in contract or tort,
+// (2) AMD shall not be liable (whether in contract or tort,
 // including negligence, or under any other theory of
 // liability) for any loss or damage of any kind or nature
 // related to, arising under or in connection with these
@@ -24,11 +24,11 @@
 // (including loss of data, profits, goodwill, or any type of
 // loss or damage suffered as a result of any action brought
 // by a third party) even if such damage or loss was
-// reasonably foreseeable or Xilinx had been advised of the
+// reasonably foreseeable or AMD had been advised of the
 // possibility of the same.
 // 
 // CRITICAL APPLICATIONS
-// Xilinx products are not designed or intended to be fail-
+// AMD products are not designed or intended to be fail-
 // safe, or for use in any application requiring fail-safe
 // performance, such as life-support or safety devices or
 // systems, Class III medical devices, nuclear facilities,
@@ -37,7 +37,7 @@
 // injury, or severe property or environmental damage
 // (individually and collectively, "Critical
 // Applications"). Customer assumes the sole risk and
-// liability of any use of Xilinx products in Critical
+// liability of any use of AMD products in Critical
 // Applications, subject only to applicable laws and
 // regulations governing limitations on product liability.
 // 
@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:v_axi4s_vid_out:4.0
-// IP Revision: 10
+// IP Revision: 17
 
 `timescale 1ns/1ps
 
@@ -84,10 +84,11 @@ module design_1_v_axi4s_vid_out_0_0 (
   overflow,
   underflow,
   fifo_read_level,
-  status
+  status,
+  sof_state_out
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME aclk_intf, ASSOCIATED_BUSIF video_in, FREQ_HZ 1e+08, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME aclk_intf, ASSOCIATED_BUSIF video_in, FREQ_HZ 1e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 aclk_intf CLK" *)
 input wire aclk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME aclken_intf, POLARITY ACTIVE_HIGH" *)
@@ -108,7 +109,7 @@ input wire s_axis_video_tuser;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 video_in TLAST" *)
 input wire s_axis_video_tlast;
 input wire fid;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME vid_io_out_clk_intf, ASSOCIATED_BUSIF vid_io_out, FREQ_HZ 4e+07, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME vid_io_out_clk_intf, ASSOCIATED_BUSIF vid_io_out, FREQ_HZ 4e+07, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 vid_io_out_clk_intf CLK" *)
 input wire vid_io_out_clk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME vid_io_out_ce_intf, POLARITY ACTIVE_HIGH" *)
@@ -149,8 +150,9 @@ output wire overflow;
 output wire underflow;
 output wire [10 : 0] fifo_read_level;
 output wire [31 : 0] status;
+output wire sof_state_out;
 
-  v_axi4s_vid_out_v4_0_10 #(
+  v_axi4s_vid_out_v4_0_17 #(
     .C_FAMILY("zynq"),
     .C_PIXELS_PER_CLOCK(1),
     .C_COMPONENTS_PER_PIXEL(3),
@@ -165,7 +167,8 @@ output wire [31 : 0] status;
     .C_SYNC_LOCK_THRESHOLD(4),
     .C_INCLUDE_PIXEL_REPEAT(0),
     .C_INCLUDE_PIXEL_REMAP_420(0),
-    .C_ADDR_WIDTH_PIXEL_REMAP_420(10)
+    .C_ADDR_WIDTH_PIXEL_REMAP_420(10),
+    .C_ARBITRARY_RES_EN(0)
   ) inst (
     .aclk(aclk),
     .aclken(aclken),
@@ -186,6 +189,11 @@ output wire [31 : 0] status;
     .vid_hblank(vid_hblank),
     .vid_field_id(vid_field_id),
     .vid_data(vid_data),
+    .vid_vsync_arb(),
+    .vid_hsync_arb(),
+    .vid_active_video_arb(),
+    .vid_field_id_arb(),
+    .vid_data_arb(),
     .vtg_vsync(vtg_vsync),
     .vtg_hsync(vtg_hsync),
     .vtg_vblank(vtg_vblank),
@@ -193,11 +201,19 @@ output wire [31 : 0] status;
     .vtg_active_video(vtg_active_video),
     .vtg_field_id(vtg_field_id),
     .vtg_ce(vtg_ce),
+    .vtg_hsync_arb(1'B0),
+    .vtg_hblank_arb(1'B0),
+    .vtg_vsync_arb(1'B0),
+    .vtg_vblank_arb(1'B0),
+    .vtg_active_video_arb(1'B0),
+    .vtg_field_id_arb(1'B0),
+    .video_format(2'B0),
     .locked(locked),
     .overflow(overflow),
     .underflow(underflow),
     .fifo_read_level(fifo_read_level),
     .status(status),
+    .sof_state_out(sof_state_out),
     .repeat_en(1'B0),
     .remap_420_en(1'B0)
   );

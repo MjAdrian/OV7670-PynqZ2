@@ -1,8 +1,9 @@
-//Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+//Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+//Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Tue Apr 19 16:22:14 2022
-//Host        : DESKTOP-V7IGHGP running 64-bit major release  (build 9200)
+//Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+//Date        : Thu Apr 18 11:10:15 2024
+//Host        : adrian running 64-bit Ubuntu 20.04.6 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
@@ -113,133 +114,9 @@ module AXI2DVI_imp_U2N5WR
         .hblank_out(v_tc_vtiming_out_HBLANK),
         .hsync_out(v_tc_vtiming_out_HSYNC),
         .resetn(1'b1),
+        .sof_state(1'b0),
         .vblank_out(v_tc_vtiming_out_VBLANK),
         .vsync_out(v_tc_vtiming_out_VSYNC));
-endmodule
-
-module Interrupt_imp_1ET0W4U
-   (In0,
-    In1,
-    In2,
-    irq,
-    s_axi_aclk,
-    s_axi_araddr,
-    s_axi_aresetn,
-    s_axi_arready,
-    s_axi_arvalid,
-    s_axi_awaddr,
-    s_axi_awready,
-    s_axi_awvalid,
-    s_axi_bready,
-    s_axi_bresp,
-    s_axi_bvalid,
-    s_axi_rdata,
-    s_axi_rready,
-    s_axi_rresp,
-    s_axi_rvalid,
-    s_axi_wdata,
-    s_axi_wready,
-    s_axi_wstrb,
-    s_axi_wvalid);
-  input [0:0]In0;
-  input [0:0]In1;
-  input [0:0]In2;
-  output irq;
-  input s_axi_aclk;
-  input [31:0]s_axi_araddr;
-  input s_axi_aresetn;
-  output s_axi_arready;
-  input s_axi_arvalid;
-  input [31:0]s_axi_awaddr;
-  output s_axi_awready;
-  input s_axi_awvalid;
-  input s_axi_bready;
-  output [1:0]s_axi_bresp;
-  output s_axi_bvalid;
-  output [31:0]s_axi_rdata;
-  input s_axi_rready;
-  output [1:0]s_axi_rresp;
-  output s_axi_rvalid;
-  input [31:0]s_axi_wdata;
-  output s_axi_wready;
-  input [3:0]s_axi_wstrb;
-  input s_axi_wvalid;
-
-  wire [31:0]Conn1_ARADDR;
-  wire Conn1_ARREADY;
-  wire Conn1_ARVALID;
-  wire [31:0]Conn1_AWADDR;
-  wire Conn1_AWREADY;
-  wire Conn1_AWVALID;
-  wire Conn1_BREADY;
-  wire [1:0]Conn1_BRESP;
-  wire Conn1_BVALID;
-  wire [31:0]Conn1_RDATA;
-  wire Conn1_RREADY;
-  wire [1:0]Conn1_RRESP;
-  wire Conn1_RVALID;
-  wire [31:0]Conn1_WDATA;
-  wire Conn1_WREADY;
-  wire [3:0]Conn1_WSTRB;
-  wire Conn1_WVALID;
-  wire [0:0]In0_1;
-  wire [0:0]In1_1;
-  wire [0:0]In2_0_1;
-  wire axi_intc_0_irq;
-  wire s_axi_aclk_1;
-  wire s_axi_aresetn_1;
-  wire [2:0]xlconcat_0_dout;
-
-  assign Conn1_ARADDR = s_axi_araddr[31:0];
-  assign Conn1_ARVALID = s_axi_arvalid;
-  assign Conn1_AWADDR = s_axi_awaddr[31:0];
-  assign Conn1_AWVALID = s_axi_awvalid;
-  assign Conn1_BREADY = s_axi_bready;
-  assign Conn1_RREADY = s_axi_rready;
-  assign Conn1_WDATA = s_axi_wdata[31:0];
-  assign Conn1_WSTRB = s_axi_wstrb[3:0];
-  assign Conn1_WVALID = s_axi_wvalid;
-  assign In0_1 = In0[0];
-  assign In1_1 = In1[0];
-  assign In2_0_1 = In2[0];
-  assign irq = axi_intc_0_irq;
-  assign s_axi_aclk_1 = s_axi_aclk;
-  assign s_axi_aresetn_1 = s_axi_aresetn;
-  assign s_axi_arready = Conn1_ARREADY;
-  assign s_axi_awready = Conn1_AWREADY;
-  assign s_axi_bresp[1:0] = Conn1_BRESP;
-  assign s_axi_bvalid = Conn1_BVALID;
-  assign s_axi_rdata[31:0] = Conn1_RDATA;
-  assign s_axi_rresp[1:0] = Conn1_RRESP;
-  assign s_axi_rvalid = Conn1_RVALID;
-  assign s_axi_wready = Conn1_WREADY;
-  design_1_axi_intc_0_0 axi_intc
-       (.intr(xlconcat_0_dout),
-        .irq(axi_intc_0_irq),
-        .s_axi_aclk(s_axi_aclk_1),
-        .s_axi_araddr(Conn1_ARADDR[8:0]),
-        .s_axi_aresetn(s_axi_aresetn_1),
-        .s_axi_arready(Conn1_ARREADY),
-        .s_axi_arvalid(Conn1_ARVALID),
-        .s_axi_awaddr(Conn1_AWADDR[8:0]),
-        .s_axi_awready(Conn1_AWREADY),
-        .s_axi_awvalid(Conn1_AWVALID),
-        .s_axi_bready(Conn1_BREADY),
-        .s_axi_bresp(Conn1_BRESP),
-        .s_axi_bvalid(Conn1_BVALID),
-        .s_axi_rdata(Conn1_RDATA),
-        .s_axi_rready(Conn1_RREADY),
-        .s_axi_rresp(Conn1_RRESP),
-        .s_axi_rvalid(Conn1_RVALID),
-        .s_axi_wdata(Conn1_WDATA),
-        .s_axi_wready(Conn1_WREADY),
-        .s_axi_wstrb(Conn1_WSTRB),
-        .s_axi_wvalid(Conn1_WVALID));
-  design_1_xlconcat_0_0 xlconcat
-       (.In0(In0_1),
-        .In1(In1_1),
-        .In2(In2_0_1),
-        .dout(xlconcat_0_dout));
 endmodule
 
 module OV7670_GRAYSCALE_TO_AXIS_imp_1400ZLF
@@ -843,7 +720,7 @@ module VDMA_imp_148AGHI
         .aresetn(axi_resetn_1));
 endmodule
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=40,numReposBlks=27,numNonXlnxBlks=1,numHierBlks=13,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=7,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=15,da_board_cnt=3,da_clkrst_cnt=42,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=39,numReposBlks=27,numNonXlnxBlks=1,numHierBlks=12,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=7,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=15,da_board_cnt=3,da_clkrst_cnt=42,da_ps7_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (DDR_addr,
     DDR_ba,
@@ -912,12 +789,12 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC SDA_O" *) output IIC_sda_o;
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC SDA_T" *) output IIC_sda_t;
   output [0:0]OV7670_RESET;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.PCLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.PCLK, CLK_DOMAIN design_1_PCLK, FREQ_HZ 24000000, INSERT_VIP 0, PHASE 0.000" *) input PCLK;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.TMDS_CLK_N CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.TMDS_CLK_N, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000" *) output TMDS_Clk_n;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.TMDS_CLK_P CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.TMDS_CLK_P, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000" *) output TMDS_Clk_p;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.PCLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.PCLK, CLK_DOMAIN design_1_PCLK, FREQ_HZ 24000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) input PCLK;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.TMDS_CLK_N CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.TMDS_CLK_N, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) output TMDS_Clk_n;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.TMDS_CLK_P CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.TMDS_CLK_P, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) output TMDS_Clk_p;
   output [2:0]TMDS_Data_n;
   output [2:0]TMDS_Data_p;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.XCLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.XCLK, CLK_DOMAIN /clk_wiz_clk_out1, FREQ_HZ 24000000, INSERT_VIP 0, PHASE 0.0" *) output XCLK;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.XCLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.XCLK, CLK_DOMAIN /clk_wiz_clk_out1, FREQ_HZ 24000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) output XCLK;
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.DATA_IN DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.DATA_IN, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}" *) input [7:0]data_in;
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.FRAME_VALID DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.FRAME_VALID, LAYERED_METADATA undef" *) output [0:0]frame_valid;
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.HREF DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.HREF, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}" *) input [0:0]href;
@@ -1143,6 +1020,7 @@ module design_1
   wire [0:0]video_in_1_TUSER;
   wire video_in_1_TVALID;
   wire [0:0]vsync_V_0_1;
+  wire [2:0]xlconcat_0_dout;
 
   assign IIC_scl_o = axi_iic_0_IIC_SCL_O;
   assign IIC_scl_t = axi_iic_0_IIC_SCL_T;
@@ -1175,30 +1053,6 @@ module design_1
         .video_in_tready(video_in_1_TREADY),
         .video_in_tuser(video_in_1_TUSER),
         .video_in_tvalid(video_in_1_TVALID));
-  Interrupt_imp_1ET0W4U Interrupt
-       (.In0(axi_iic_0_iic2intc_irpt),
-        .In1(In1_1),
-        .In2(In2_0_1),
-        .irq(I2C_irq),
-        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
-        .s_axi_araddr(ps7_0_axi_periph_M04_AXI_ARADDR),
-        .s_axi_aresetn(proc_sys_reset_0_peripheral_aresetn),
-        .s_axi_arready(ps7_0_axi_periph_M04_AXI_ARREADY),
-        .s_axi_arvalid(ps7_0_axi_periph_M04_AXI_ARVALID),
-        .s_axi_awaddr(ps7_0_axi_periph_M04_AXI_AWADDR),
-        .s_axi_awready(ps7_0_axi_periph_M04_AXI_AWREADY),
-        .s_axi_awvalid(ps7_0_axi_periph_M04_AXI_AWVALID),
-        .s_axi_bready(ps7_0_axi_periph_M04_AXI_BREADY),
-        .s_axi_bresp(ps7_0_axi_periph_M04_AXI_BRESP),
-        .s_axi_bvalid(ps7_0_axi_periph_M04_AXI_BVALID),
-        .s_axi_rdata(ps7_0_axi_periph_M04_AXI_RDATA),
-        .s_axi_rready(ps7_0_axi_periph_M04_AXI_RREADY),
-        .s_axi_rresp(ps7_0_axi_periph_M04_AXI_RRESP),
-        .s_axi_rvalid(ps7_0_axi_periph_M04_AXI_RVALID),
-        .s_axi_wdata(ps7_0_axi_periph_M04_AXI_WDATA),
-        .s_axi_wready(ps7_0_axi_periph_M04_AXI_WREADY),
-        .s_axi_wstrb(ps7_0_axi_periph_M04_AXI_WSTRB),
-        .s_axi_wvalid(ps7_0_axi_periph_M04_AXI_WVALID));
   OV7670_GRAYSCALE_TO_AXIS_imp_1400ZLF OV7670_GRAYSCALE_TO_AXIS
        (.PCLK(ap_clk_0_1),
         .PCLK_rst(ap_rst_1),
@@ -1336,6 +1190,28 @@ module design_1
         .sda_i(axi_iic_0_IIC_SDA_I),
         .sda_o(axi_iic_0_IIC_SDA_O),
         .sda_t(axi_iic_0_IIC_SDA_T));
+  design_1_axi_intc_0_0 axi_intc
+       (.intr(xlconcat_0_dout),
+        .irq(I2C_irq),
+        .s_axi_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axi_araddr(ps7_0_axi_periph_M04_AXI_ARADDR[8:0]),
+        .s_axi_aresetn(proc_sys_reset_0_peripheral_aresetn),
+        .s_axi_arready(ps7_0_axi_periph_M04_AXI_ARREADY),
+        .s_axi_arvalid(ps7_0_axi_periph_M04_AXI_ARVALID),
+        .s_axi_awaddr(ps7_0_axi_periph_M04_AXI_AWADDR[8:0]),
+        .s_axi_awready(ps7_0_axi_periph_M04_AXI_AWREADY),
+        .s_axi_awvalid(ps7_0_axi_periph_M04_AXI_AWVALID),
+        .s_axi_bready(ps7_0_axi_periph_M04_AXI_BREADY),
+        .s_axi_bresp(ps7_0_axi_periph_M04_AXI_BRESP),
+        .s_axi_bvalid(ps7_0_axi_periph_M04_AXI_BVALID),
+        .s_axi_rdata(ps7_0_axi_periph_M04_AXI_RDATA),
+        .s_axi_rready(ps7_0_axi_periph_M04_AXI_RREADY),
+        .s_axi_rresp(ps7_0_axi_periph_M04_AXI_RRESP),
+        .s_axi_rvalid(ps7_0_axi_periph_M04_AXI_RVALID),
+        .s_axi_wdata(ps7_0_axi_periph_M04_AXI_WDATA),
+        .s_axi_wready(ps7_0_axi_periph_M04_AXI_WREADY),
+        .s_axi_wstrb(ps7_0_axi_periph_M04_AXI_WSTRB),
+        .s_axi_wvalid(ps7_0_axi_periph_M04_AXI_WVALID));
   design_1_clk_wiz_0_0 clk_wiz
        (.clk_in1(processing_system7_0_FCLK_CLK0),
         .clk_out1(clk_wiz_0_clk_out1),
@@ -1610,6 +1486,11 @@ module design_1
         .S00_AXI_wready(processing_system7_0_M_AXI_GP0_WREADY),
         .S00_AXI_wstrb(processing_system7_0_M_AXI_GP0_WSTRB),
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID));
+  design_1_xlconcat_0_0 xlconcat
+       (.In0(axi_iic_0_iic2intc_irpt),
+        .In1(In1_1),
+        .In2(In2_0_1),
+        .dout(xlconcat_0_dout));
 endmodule
 
 module design_1_ps7_0_axi_periph_0

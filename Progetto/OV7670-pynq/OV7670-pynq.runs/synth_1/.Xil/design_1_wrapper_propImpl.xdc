@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc rfile:../../../OV7670-pynq.srcs/constrs_1/new/io.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc rfile:../../../OV7670-pynq.srcs/constrs_1/new/io.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN Y14 [get_ports XCLK]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
@@ -111,3 +111,5 @@ set_property src_info {type:XDC file:1 line:73 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN Y17 [get_ports {data_in[6]}]
 set_property src_info {type:XDC file:1 line:74 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W19 [get_ports {data_in[7]}]
+set_property src_info {type:XDC file:1 line:85 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN W9 IOSTANDARD LVCMOS25} [get_ports {PWM_OUT}];

@@ -1,12 +1,14 @@
 #-----------------------------------------------------------
-# Vivado v2019.1 (64-bit)
-# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
-# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Apr 21 18:29:04 2022
-# Process ID: 12508
-# Current directory: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/impl_1
-# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
-# Log file: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/impl_1/design_1_wrapper.vdi
-# Journal file: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/impl_1\vivado.jou
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Apr 25 15:01:44 2024
+# Process ID: 39258
+# Current directory: /home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/impl_1
+# Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: /home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/impl_1/design_1_wrapper.vdi
+# Journal file: /home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/impl_1/vivado.jou
+# Running On: adrian, OS: Linux, CPU Frequency: 2900.000 MHz, CPU Physical cores: 4, Host memory: 16477 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
