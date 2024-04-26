@@ -11,7 +11,7 @@
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1340.863 ; gain = 37.836 ; free physical = 1945 ; free virtual = 10915
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1340.891 ; gain = 37.836 ; free physical = 1362 ; free virtual = 10217
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/vivado-library-master'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/HLS'.
@@ -24,17 +24,17 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 81248
+INFO: [Synth 8-7075] Helper process launched with PID 87559
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2161.719 ; gain = 403.715 ; free physical = 827 ; free virtual = 9799
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2161.777 ; gain = 401.715 ; free physical = 269 ; free virtual = 9133
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/home/adrian/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197]
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [/home/adrian/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:725]
 INFO: [Synth 8-6157] synthesizing module 'AXI2DVI_imp_U2N5WR' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_v_axi4s_vid_out_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_v_axi4s_vid_out_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_v_axi4s_vid_out_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_v_axi4s_vid_out_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_v_axi4s_vid_out_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_v_axi4s_vid_out_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_v_axi4s_vid_out_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_v_axi4s_vid_out_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'vid_vblank' of module 'design_1_v_axi4s_vid_out_0_0' is unconnected for instance 'axi4s_vid_out' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:75]
 WARNING: [Synth 8-7071] port 'vid_hblank' of module 'design_1_v_axi4s_vid_out_0_0' is unconnected for instance 'axi4s_vid_out' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:75]
 WARNING: [Synth 8-7071] port 'vid_field_id' of module 'design_1_v_axi4s_vid_out_0_0' is unconnected for instance 'axi4s_vid_out' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:75]
@@ -44,32 +44,32 @@ WARNING: [Synth 8-7071] port 'underflow' of module 'design_1_v_axi4s_vid_out_0_0
 WARNING: [Synth 8-7071] port 'fifo_read_level' of module 'design_1_v_axi4s_vid_out_0_0' is unconnected for instance 'axi4s_vid_out' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:75]
 WARNING: [Synth 8-7071] port 'status' of module 'design_1_v_axi4s_vid_out_0_0' is unconnected for instance 'axi4s_vid_out' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:75]
 WARNING: [Synth 8-7023] instance 'axi4s_vid_out' of module 'design_1_v_axi4s_vid_out_0_0' has 32 connections declared, but only 24 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:75]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rgb2dvi_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_rgb2dvi_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rgb2dvi_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_rgb2dvi_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_v_tc_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_v_tc_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_v_tc_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_v_tc_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rgb2dvi_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_rgb2dvi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rgb2dvi_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_rgb2dvi_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_v_tc_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_v_tc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_v_tc_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_v_tc_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'fsync_out' of module 'design_1_v_tc_0_0' is unconnected for instance 'v_tc' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:111]
 WARNING: [Synth 8-7023] instance 'v_tc' of module 'design_1_v_tc_0_0' has 11 connections declared, but only 10 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:111]
 INFO: [Synth 8-6155] done synthesizing module 'AXI2DVI_imp_U2N5WR' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6157] synthesizing module 'OV7670_GRAYSCALE_TO_AXIS_imp_1400ZLF' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:124]
-INFO: [Synth 8-6157] synthesizing module 'design_1_LF_valid_to_AXIS_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_LF_valid_to_AXIS_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_LF_valid_to_AXIS_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_LF_valid_to_AXIS_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_LF_valid_to_AXIS_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_LF_valid_to_AXIS_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_LF_valid_to_AXIS_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_LF_valid_to_AXIS_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'ap_done' of module 'design_1_LF_valid_to_AXIS_0_0' is unconnected for instance 'LF_valid_to_AXIS' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:192]
 WARNING: [Synth 8-7071] port 'ap_idle' of module 'design_1_LF_valid_to_AXIS_0_0' is unconnected for instance 'LF_valid_to_AXIS' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:192]
 WARNING: [Synth 8-7071] port 'ap_ready' of module 'design_1_LF_valid_to_AXIS_0_0' is unconnected for instance 'LF_valid_to_AXIS' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:192]
 WARNING: [Synth 8-7023] instance 'LF_valid_to_AXIS' of module 'design_1_LF_valid_to_AXIS_0_0' has 12 connections declared, but only 9 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:192]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axis_data_fifo_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_axis_data_fifo_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_data_fifo_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_axis_data_fifo_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_c_counter_binary_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_c_counter_binary_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_c_counter_binary_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_c_counter_binary_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_data_fifo_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_data_fifo_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_c_counter_binary_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_c_counter_binary_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_c_counter_binary_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_c_counter_binary_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'Q' of module 'design_1_c_counter_binary_0_0' is unconnected for instance 'c_counter_binary' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:212]
 WARNING: [Synth 8-7023] instance 'c_counter_binary' of module 'design_1_c_counter_binary_0_0' has 3 connections declared, but only 2 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:212]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_3' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_3/synth/design_1_xlconstant_0_3.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_8_xlconstant' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/d390/hdl/xlconstant_v1_1_vl_rfs.v:68]
 INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_8_xlconstant' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/d390/hdl/xlconstant_v1_1_vl_rfs.v:68]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_3' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_3/synth/design_1_xlconstant_0_3.v:53]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ov7670_LUMA_CHROMA_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_ov7670_LUMA_CHROMA_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ov7670_LUMA_CHROMA_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_ov7670_LUMA_CHROMA_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ov7670_LUMA_CHROMA_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_ov7670_LUMA_CHROMA_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ov7670_LUMA_CHROMA_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_ov7670_LUMA_CHROMA_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'ap_done' of module 'design_1_ov7670_LUMA_CHROMA_0_0' is unconnected for instance 'ov7670_LUMA_CHROMA' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:217]
 WARNING: [Synth 8-7071] port 'ap_idle' of module 'design_1_ov7670_LUMA_CHROMA_0_0' is unconnected for instance 'ov7670_LUMA_CHROMA' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:217]
 WARNING: [Synth 8-7071] port 'ap_ready' of module 'design_1_ov7670_LUMA_CHROMA_0_0' is unconnected for instance 'ov7670_LUMA_CHROMA' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:217]
@@ -78,31 +78,33 @@ WARNING: [Synth 8-7071] port 'outStream_LUMA_V_V_TDATA' of module 'design_1_ov76
 WARNING: [Synth 8-7071] port 'outStream_CHROMA_V_V_TVALID' of module 'design_1_ov7670_LUMA_CHROMA_0_0' is unconnected for instance 'ov7670_LUMA_CHROMA' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:217]
 WARNING: [Synth 8-7071] port 'outStream_CHROMA_V_V_TDATA' of module 'design_1_ov7670_LUMA_CHROMA_0_0' is unconnected for instance 'ov7670_LUMA_CHROMA' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:217]
 WARNING: [Synth 8-7023] instance 'ov7670_LUMA_CHROMA' of module 'design_1_ov7670_LUMA_CHROMA_0_0' has 19 connections declared, but only 12 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:217]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ov7670_interface_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_ov7670_interface_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ov7670_interface_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_ov7670_interface_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ov7670_interface_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_ov7670_interface_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ov7670_interface_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_ov7670_interface_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'ap_done' of module 'design_1_ov7670_interface_0_0' is unconnected for instance 'ov7670_interface' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:230]
 WARNING: [Synth 8-7071] port 'ap_idle' of module 'design_1_ov7670_interface_0_0' is unconnected for instance 'ov7670_interface' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:230]
 WARNING: [Synth 8-7071] port 'ap_ready' of module 'design_1_ov7670_interface_0_0' is unconnected for instance 'ov7670_interface' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:230]
 WARNING: [Synth 8-7023] instance 'ov7670_interface' of module 'design_1_ov7670_interface_0_0' has 12 connections declared, but only 9 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:230]
 INFO: [Synth 8-6155] done synthesizing module 'OV7670_GRAYSCALE_TO_AXIS_imp_1400ZLF' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:124]
-INFO: [Synth 8-6157] synthesizing module 'design_1_PWM_Kotha_v1_0_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_PWM_Kotha_v1_0_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_PWM_Kotha_v1_0_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_PWM_Kotha_v1_0_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_PWM_Kotha_v1_0_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_PWM_Kotha_v1_0_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_PWM_Kotha_v1_0_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_PWM_Kotha_v1_0_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_PWM_Kotha_v1_0_1_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_PWM_Kotha_v1_0_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_PWM_Kotha_v1_0_1_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_PWM_Kotha_v1_0_1_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'Reset_imp_VUYUUT' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:242]
-INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'reset_100M' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:277]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'reset_100M' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:277]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'reset_100M' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:277]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'reset_100M' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:277]
 WARNING: [Synth 8-7023] instance 'reset_100M' of module 'design_1_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:277]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'reset_24M_RnM' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:284]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'reset_24M_RnM' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:284]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'reset_24M_RnM' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:284]
 WARNING: [Synth 8-7023] instance 'reset_24M_RnM' of module 'design_1_rst_ps7_0_100M_0' has 10 connections declared, but only 7 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:284]
-INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_0_1' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_proc_sys_reset_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_0_1' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_proc_sys_reset_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_0_1' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_proc_sys_reset_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_0_1' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_proc_sys_reset_0_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_proc_sys_reset_0_1' is unconnected for instance 'reset_48M' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:292]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_proc_sys_reset_0_1' is unconnected for instance 'reset_48M' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:292]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_proc_sys_reset_0_1' is unconnected for instance 'reset_48M' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:292]
@@ -110,88 +112,90 @@ WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_proc_sys
 WARNING: [Synth 8-7023] instance 'reset_48M' of module 'design_1_proc_sys_reset_0_1' has 10 connections declared, but only 6 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:292]
 INFO: [Synth 8-6155] done synthesizing module 'Reset_imp_VUYUUT' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:242]
 INFO: [Synth 8-6157] synthesizing module 'VDMA_imp_148AGHI' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:301]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_vdma_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_axi_vdma_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_vdma_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_axi_vdma_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_vdma_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_axi_vdma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_vdma_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_axi_vdma_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mm2s_frame_ptr_out' of module 'design_1_axi_vdma_0_0' is unconnected for instance 'axi_vdma' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:589]
 WARNING: [Synth 8-7071] port 's2mm_frame_ptr_out' of module 'design_1_axi_vdma_0_0' is unconnected for instance 'axi_vdma' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:589]
 WARNING: [Synth 8-7071] port 'm_axis_mm2s_tkeep' of module 'design_1_axi_vdma_0_0' is unconnected for instance 'axi_vdma' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:589]
 WARNING: [Synth 8-7023] instance 'axi_vdma' of module 'design_1_axi_vdma_0_0' has 67 connections declared, but only 64 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:589]
-INFO: [Synth 8-6157] synthesizing module 'design_1_smartconnect_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_smartconnect_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_smartconnect_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_smartconnect_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_smartconnect_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_smartconnect_0_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'VDMA_imp_148AGHI' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:301]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_iic_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_axi_iic_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_iic_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_axi_iic_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'gpo' of module 'design_1_axi_iic_0_0' is unconnected for instance 'axi_iic' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1214]
-WARNING: [Synth 8-7023] instance 'axi_iic' of module 'design_1_axi_iic_0_0' has 27 connections declared, but only 26 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1214]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_intc_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_axi_intc_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_intc_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_axi_intc_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_clk_wiz_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_clk_wiz_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'filter_imp_QO7DPV' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2634]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axistream2axivideo_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_axistream2axivideo_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axistream2axivideo_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_axistream2axivideo_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'ap_done' of module 'design_1_axistream2axivideo_0_0' is unconnected for instance 'axistream2axivideo' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2771]
-WARNING: [Synth 8-7071] port 'ap_idle' of module 'design_1_axistream2axivideo_0_0' is unconnected for instance 'axistream2axivideo' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2771]
-WARNING: [Synth 8-7071] port 'ap_ready' of module 'design_1_axistream2axivideo_0_0' is unconnected for instance 'axistream2axivideo' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2771]
-WARNING: [Synth 8-7023] instance 'axistream2axivideo' of module 'design_1_axistream2axivideo_0_0' has 24 connections declared, but only 21 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2771]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_iic_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_axi_iic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_iic_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_axi_iic_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'gpo' of module 'design_1_axi_iic_0_0' is unconnected for instance 'axi_iic' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1260]
+WARNING: [Synth 8-7023] instance 'axi_iic' of module 'design_1_axi_iic_0_0' has 27 connections declared, but only 26 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1260]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_intc_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_intc_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'filter_imp_QO7DPV' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2843]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axistream2axivideo_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_axistream2axivideo_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axistream2axivideo_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_axistream2axivideo_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'ap_done' of module 'design_1_axistream2axivideo_0_0' is unconnected for instance 'axistream2axivideo' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2980]
+WARNING: [Synth 8-7071] port 'ap_idle' of module 'design_1_axistream2axivideo_0_0' is unconnected for instance 'axistream2axivideo' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2980]
+WARNING: [Synth 8-7071] port 'ap_ready' of module 'design_1_axistream2axivideo_0_0' is unconnected for instance 'axistream2axivideo' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2980]
+WARNING: [Synth 8-7023] instance 'axistream2axivideo' of module 'design_1_axistream2axivideo_0_0' has 24 connections declared, but only 21 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2980]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_2' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/synth/design_1_xlconstant_0_2.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_2' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/synth/design_1_xlconstant_0_2.v:53]
-INFO: [Synth 8-6157] synthesizing module 'design_1_convolution_filter_0_2' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_convolution_filter_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_convolution_filter_0_2' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_convolution_filter_0_2_stub.v:6]
-WARNING: [Synth 8-7071] port 'ap_done' of module 'design_1_convolution_filter_0_2' is unconnected for instance 'convolution_filter' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2795]
-WARNING: [Synth 8-7071] port 'ap_idle' of module 'design_1_convolution_filter_0_2' is unconnected for instance 'convolution_filter' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2795]
-WARNING: [Synth 8-7071] port 'ap_ready' of module 'design_1_convolution_filter_0_2' is unconnected for instance 'convolution_filter' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2795]
-WARNING: [Synth 8-7023] instance 'convolution_filter' of module 'design_1_convolution_filter_0_2' has 29 connections declared, but only 26 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2795]
-INFO: [Synth 8-6157] synthesizing module 'design_1_gray2rgb_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_gray2rgb_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_gray2rgb_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_gray2rgb_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'outStream_TSTRB' of module 'design_1_gray2rgb_0_0' is unconnected for instance 'gray2rgb' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2822]
-WARNING: [Synth 8-7071] port 'outStream_TID' of module 'design_1_gray2rgb_0_0' is unconnected for instance 'gray2rgb' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2822]
-WARNING: [Synth 8-7071] port 'outStream_TDEST' of module 'design_1_gray2rgb_0_0' is unconnected for instance 'gray2rgb' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2822]
-WARNING: [Synth 8-7071] port 'ap_done' of module 'design_1_gray2rgb_0_0' is unconnected for instance 'gray2rgb' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2822]
-WARNING: [Synth 8-7071] port 'ap_ready' of module 'design_1_gray2rgb_0_0' is unconnected for instance 'gray2rgb' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2822]
-WARNING: [Synth 8-7071] port 'ap_idle' of module 'design_1_gray2rgb_0_0' is unconnected for instance 'gray2rgb' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2822]
-WARNING: [Synth 8-7023] instance 'gray2rgb' of module 'design_1_gray2rgb_0_0' has 24 connections declared, but only 18 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2822]
-INFO: [Synth 8-6157] synthesizing module 'design_1_scaleImage_0_1' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_scaleImage_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_scaleImage_0_1' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_scaleImage_0_1_stub.v:6]
-WARNING: [Synth 8-7071] port 'ap_done' of module 'design_1_scaleImage_0_1' is unconnected for instance 'scaleImage' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2841]
-WARNING: [Synth 8-7071] port 'ap_ready' of module 'design_1_scaleImage_0_1' is unconnected for instance 'scaleImage' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2841]
-WARNING: [Synth 8-7071] port 'ap_idle' of module 'design_1_scaleImage_0_1' is unconnected for instance 'scaleImage' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2841]
-WARNING: [Synth 8-7023] instance 'scaleImage' of module 'design_1_scaleImage_0_1' has 24 connections declared, but only 21 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2841]
-INFO: [Synth 8-6155] done synthesizing module 'filter_imp_QO7DPV' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2634]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_processing_system7_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1296]
-WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1296]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_BID' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1296]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RID' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1296]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1296]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1296]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1296]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1296]
-WARNING: [Synth 8-7071] port 'FCLK_RESET0_N' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1296]
-WARNING: [Synth 8-7023] instance 'processing_system7' of module 'design_1_processing_system7_0_0' has 112 connections declared, but only 103 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1296]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1565]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2865]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2865]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2997]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2997]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_14WQB4R' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3129]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_14WQB4R' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3129]
-INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_YFYJ3U' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3254]
-INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_YFYJ3U' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3254]
-INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_17KQ732' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3386]
-INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_17KQ732' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3386]
-INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_VQEDA7' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3518]
-INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_VQEDA7' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3518]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3664]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3664]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-81157-adrian/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1565]
+INFO: [Synth 8-6157] synthesizing module 'design_1_convolution_filter_0_2' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_convolution_filter_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_convolution_filter_0_2' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_convolution_filter_0_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'ap_done' of module 'design_1_convolution_filter_0_2' is unconnected for instance 'convolution_filter' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3004]
+WARNING: [Synth 8-7071] port 'ap_idle' of module 'design_1_convolution_filter_0_2' is unconnected for instance 'convolution_filter' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3004]
+WARNING: [Synth 8-7071] port 'ap_ready' of module 'design_1_convolution_filter_0_2' is unconnected for instance 'convolution_filter' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3004]
+WARNING: [Synth 8-7023] instance 'convolution_filter' of module 'design_1_convolution_filter_0_2' has 29 connections declared, but only 26 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3004]
+INFO: [Synth 8-6157] synthesizing module 'design_1_gray2rgb_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_gray2rgb_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_gray2rgb_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_gray2rgb_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'outStream_TSTRB' of module 'design_1_gray2rgb_0_0' is unconnected for instance 'gray2rgb' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3031]
+WARNING: [Synth 8-7071] port 'outStream_TID' of module 'design_1_gray2rgb_0_0' is unconnected for instance 'gray2rgb' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3031]
+WARNING: [Synth 8-7071] port 'outStream_TDEST' of module 'design_1_gray2rgb_0_0' is unconnected for instance 'gray2rgb' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3031]
+WARNING: [Synth 8-7071] port 'ap_done' of module 'design_1_gray2rgb_0_0' is unconnected for instance 'gray2rgb' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3031]
+WARNING: [Synth 8-7071] port 'ap_ready' of module 'design_1_gray2rgb_0_0' is unconnected for instance 'gray2rgb' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3031]
+WARNING: [Synth 8-7071] port 'ap_idle' of module 'design_1_gray2rgb_0_0' is unconnected for instance 'gray2rgb' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3031]
+WARNING: [Synth 8-7023] instance 'gray2rgb' of module 'design_1_gray2rgb_0_0' has 24 connections declared, but only 18 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3031]
+INFO: [Synth 8-6157] synthesizing module 'design_1_scaleImage_0_1' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_scaleImage_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_scaleImage_0_1' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_scaleImage_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'ap_done' of module 'design_1_scaleImage_0_1' is unconnected for instance 'scaleImage' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3050]
+WARNING: [Synth 8-7071] port 'ap_ready' of module 'design_1_scaleImage_0_1' is unconnected for instance 'scaleImage' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3050]
+WARNING: [Synth 8-7071] port 'ap_idle' of module 'design_1_scaleImage_0_1' is unconnected for instance 'scaleImage' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3050]
+WARNING: [Synth 8-7023] instance 'scaleImage' of module 'design_1_scaleImage_0_1' has 24 connections declared, but only 21 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3050]
+INFO: [Synth 8-6155] done synthesizing module 'filter_imp_QO7DPV' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:2843]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1342]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1342]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_BID' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1342]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RID' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1342]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1342]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1342]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1342]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1342]
+WARNING: [Synth 8-7071] port 'FCLK_RESET0_N' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1342]
+WARNING: [Synth 8-7023] instance 'processing_system7' of module 'design_1_processing_system7_0_0' has 112 connections declared, but only 103 given [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1342]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1632]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3074]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3074]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3206]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3206]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_14WQB4R' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3338]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_14WQB4R' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3338]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_YFYJ3U' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3463]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_YFYJ3U' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3463]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_17KQ732' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3595]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_17KQ732' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3595]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_VQEDA7' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3727]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_VQEDA7' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3727]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_16EQN6L' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3873]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_16EQN6L' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:3873]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:4019]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:4019]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-87450-adrian/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/synth/design_1.v:1632]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_5_xlconcat' [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/147b/hdl/xlconcat_v2_1_vl_rfs.v:59]
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_5_xlconcat' (0#1) [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ipshared/147b/hdl/xlconcat_v2_1_vl_rfs.v:59]
@@ -300,18 +304,18 @@ WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_5_xlconcat is eith
 WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2256.656 ; gain = 498.652 ; free physical = 732 ; free virtual = 9705
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2257.715 ; gain = 497.652 ; free physical = 180 ; free virtual = 9025
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2274.469 ; gain = 516.465 ; free physical = 729 ; free virtual = 9702
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2272.559 ; gain = 512.496 ; free physical = 178 ; free virtual = 9023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2274.469 ; gain = 516.465 ; free physical = 729 ; free virtual = 9702
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2272.559 ; gain = 512.496 ; free physical = 178 ; free virtual = 9023
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2280.406 ; gain = 0.000 ; free physical = 724 ; free virtual = 9698
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2278.496 ; gain = 0.000 ; free physical = 177 ; free virtual = 9017
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -368,6 +372,8 @@ Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/O
 Finished Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_axi_intc_0_0/design_1_axi_intc_0_0/design_1_axi_intc_0_0_in_context.xdc] for cell 'design_1_i/axi_intc'
 Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_PWM_Kotha_v1_0_0_0/design_1_PWM_Kotha_v1_0_0_0/design_1_PWM_Kotha_v1_0_0_0_in_context.xdc] for cell 'design_1_i/PWM_Kotha_v1_0_0'
 Finished Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_PWM_Kotha_v1_0_0_0/design_1_PWM_Kotha_v1_0_0_0/design_1_PWM_Kotha_v1_0_0_0_in_context.xdc] for cell 'design_1_i/PWM_Kotha_v1_0_0'
+Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_PWM_Kotha_v1_0_1_0/design_1_PWM_Kotha_v1_0_1_0/design_1_PWM_Kotha_v1_0_0_0_in_context.xdc] for cell 'design_1_i/PWM_Kotha_v1_0_1'
+Finished Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.gen/sources_1/bd/design_1/ip/design_1_PWM_Kotha_v1_0_1_0/design_1_PWM_Kotha_v1_0_1_0/design_1_PWM_Kotha_v1_0_0_0_in_context.xdc] for cell 'design_1_i/PWM_Kotha_v1_0_1'
 Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc]
 WARNING: [Vivado 12-584] No ports matched 'OV7670_RESET_tri_o[0]'. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:9]
 WARNING: [Vivado 12-584] No ports matched 'OV7670_RESET_tri_o[0]'. [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:10]
@@ -404,23 +410,23 @@ Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/O
 Finished Parsing XDC File [/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2360.281 ; gain = 0.000 ; free physical = 694 ; free virtual = 9667
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2356.402 ; gain = 0.000 ; free physical = 179 ; free virtual = 9010
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2360.316 ; gain = 0.000 ; free physical = 693 ; free virtual = 9666
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2356.438 ; gain = 0.000 ; free physical = 178 ; free virtual = 9009
 WARNING: [Timing 38-316] Clock period '25.000' specified during out-of-context synthesis of instance 'design_1_i/OV7670_GRAYSCALE_TO_AXIS/ov7670_LUMA_CHROMA' at clock pin 'ap_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '12.500' specified during out-of-context synthesis of instance 'design_1_i/filter/convolution_filter' at clock pin 'ap_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2360.316 ; gain = 602.312 ; free physical = 689 ; free virtual = 9662
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2356.438 ; gain = 596.375 ; free physical = 185 ; free virtual = 9006
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2360.316 ; gain = 602.312 ; free physical = 689 ; free virtual = 9662
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2356.438 ; gain = 596.375 ; free physical = 185 ; free virtual = 9006
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -731,11 +737,12 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/VDMA/smartconnect. (co
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_intc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconcat. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/PWM_Kotha_v1_0_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/PWM_Kotha_v1_0_1. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2360.316 ; gain = 602.312 ; free physical = 692 ; free virtual = 9666
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2356.438 ; gain = 596.375 ; free physical = 184 ; free virtual = 9006
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2360.316 ; gain = 602.312 ; free physical = 689 ; free virtual = 9664
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2356.438 ; gain = 596.375 ; free physical = 182 ; free virtual = 9005
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -758,25 +765,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2360.316 ; gain = 602.312 ; free physical = 691 ; free virtual = 9670
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2356.438 ; gain = 596.375 ; free physical = 177 ; free virtual = 8987
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2360.316 ; gain = 602.312 ; free physical = 690 ; free virtual = 9669
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2356.438 ; gain = 596.375 ; free physical = 191 ; free virtual = 8879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2360.316 ; gain = 602.312 ; free physical = 692 ; free virtual = 9671
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2356.438 ; gain = 596.375 ; free physical = 191 ; free virtual = 8879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2360.316 ; gain = 602.312 ; free physical = 694 ; free virtual = 9673
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2356.438 ; gain = 596.375 ; free physical = 172 ; free virtual = 8874
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -794,37 +801,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2360.316 ; gain = 602.312 ; free physical = 667 ; free virtual = 9647
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2356.438 ; gain = 596.375 ; free physical = 201 ; free virtual = 8783
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2360.316 ; gain = 602.312 ; free physical = 667 ; free virtual = 9647
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2356.438 ; gain = 596.375 ; free physical = 201 ; free virtual = 8783
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2360.316 ; gain = 602.312 ; free physical = 667 ; free virtual = 9646
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2356.438 ; gain = 596.375 ; free physical = 200 ; free virtual = 8783
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2360.316 ; gain = 602.312 ; free physical = 667 ; free virtual = 9647
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2356.438 ; gain = 596.375 ; free physical = 199 ; free virtual = 8783
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2360.316 ; gain = 602.312 ; free physical = 667 ; free virtual = 9647
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2356.438 ; gain = 596.375 ; free physical = 199 ; free virtual = 8783
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2360.316 ; gain = 602.312 ; free physical = 668 ; free virtual = 9648
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2356.438 ; gain = 596.375 ; free physical = 199 ; free virtual = 8783
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -837,28 +844,29 @@ Report BlackBoxes:
 |1     |design_1_xbar_0                 |         1|
 |2     |design_1_auto_pc_0              |         1|
 |3     |design_1_PWM_Kotha_v1_0_0_0     |         1|
-|4     |design_1_axi_gpio_0_0           |         1|
-|5     |design_1_axi_iic_0_0            |         1|
-|6     |design_1_axi_intc_0_0           |         1|
-|7     |design_1_clk_wiz_0_0            |         1|
-|8     |design_1_processing_system7_0_0 |         1|
-|9     |design_1_v_axi4s_vid_out_0_0    |         1|
-|10    |design_1_rgb2dvi_0_0            |         1|
-|11    |design_1_v_tc_0_0               |         1|
-|12    |design_1_LF_valid_to_AXIS_0_0   |         1|
-|13    |design_1_axis_data_fifo_0_0     |         1|
-|14    |design_1_c_counter_binary_0_0   |         1|
-|15    |design_1_ov7670_LUMA_CHROMA_0_0 |         1|
-|16    |design_1_ov7670_interface_0_0   |         1|
-|17    |design_1_proc_sys_reset_0_0     |         1|
-|18    |design_1_rst_ps7_0_100M_0       |         1|
-|19    |design_1_proc_sys_reset_0_1     |         1|
-|20    |design_1_axi_vdma_0_0           |         1|
-|21    |design_1_smartconnect_0_0       |         1|
-|22    |design_1_axistream2axivideo_0_0 |         1|
-|23    |design_1_convolution_filter_0_2 |         1|
-|24    |design_1_gray2rgb_0_0           |         1|
-|25    |design_1_scaleImage_0_1         |         1|
+|4     |design_1_PWM_Kotha_v1_0_1_0     |         1|
+|5     |design_1_axi_gpio_0_0           |         1|
+|6     |design_1_axi_iic_0_0            |         1|
+|7     |design_1_axi_intc_0_0           |         1|
+|8     |design_1_clk_wiz_0_0            |         1|
+|9     |design_1_processing_system7_0_0 |         1|
+|10    |design_1_v_axi4s_vid_out_0_0    |         1|
+|11    |design_1_rgb2dvi_0_0            |         1|
+|12    |design_1_v_tc_0_0               |         1|
+|13    |design_1_LF_valid_to_AXIS_0_0   |         1|
+|14    |design_1_axis_data_fifo_0_0     |         1|
+|15    |design_1_c_counter_binary_0_0   |         1|
+|16    |design_1_ov7670_LUMA_CHROMA_0_0 |         1|
+|17    |design_1_ov7670_interface_0_0   |         1|
+|18    |design_1_proc_sys_reset_0_0     |         1|
+|19    |design_1_rst_ps7_0_100M_0       |         1|
+|20    |design_1_proc_sys_reset_0_1     |         1|
+|21    |design_1_axi_vdma_0_0           |         1|
+|22    |design_1_smartconnect_0_0       |         1|
+|23    |design_1_axistream2axivideo_0_0 |         1|
+|24    |design_1_convolution_filter_0_2 |         1|
+|25    |design_1_gray2rgb_0_0           |         1|
+|26    |design_1_scaleImage_0_1         |         1|
 +------+--------------------------------+----------+
 
 Report Cell Usage: 
@@ -867,57 +875,58 @@ Report Cell Usage:
 +------+------------------------------+------+
 |1     |design_1_LF_valid_to_AXIS_0   |     1|
 |2     |design_1_PWM_Kotha_v1_0_0     |     1|
-|3     |design_1_auto_pc              |     1|
-|4     |design_1_axi_gpio_0           |     1|
-|5     |design_1_axi_iic_0            |     1|
-|6     |design_1_axi_intc_0           |     1|
-|7     |design_1_axi_vdma_0           |     1|
-|8     |design_1_axis_data_fifo_0     |     1|
-|9     |design_1_axistream2axivideo_0 |     1|
-|10    |design_1_c_counter_binary_0   |     1|
-|11    |design_1_clk_wiz_0            |     1|
-|12    |design_1_convolution_filter_0 |     1|
-|13    |design_1_gray2rgb_0           |     1|
-|14    |design_1_ov7670_LUMA_CHROMA_0 |     1|
-|15    |design_1_ov7670_interface_0   |     1|
-|16    |design_1_proc_sys_reset_0     |     2|
-|18    |design_1_processing_system7_0 |     1|
-|19    |design_1_rgb2dvi_0            |     1|
-|20    |design_1_rst_ps7_0_100M       |     1|
-|21    |design_1_scaleImage_0         |     1|
-|22    |design_1_smartconnect_0       |     1|
-|23    |design_1_v_axi4s_vid_out_0    |     1|
-|24    |design_1_v_tc_0               |     1|
-|25    |design_1_xbar                 |     1|
-|26    |IBUF                          |    12|
-|27    |IOBUF                         |     2|
-|28    |OBUF                          |     4|
+|3     |design_1_PWM_Kotha_v1_0_1     |     1|
+|4     |design_1_auto_pc              |     1|
+|5     |design_1_axi_gpio_0           |     1|
+|6     |design_1_axi_iic_0            |     1|
+|7     |design_1_axi_intc_0           |     1|
+|8     |design_1_axi_vdma_0           |     1|
+|9     |design_1_axis_data_fifo_0     |     1|
+|10    |design_1_axistream2axivideo_0 |     1|
+|11    |design_1_c_counter_binary_0   |     1|
+|12    |design_1_clk_wiz_0            |     1|
+|13    |design_1_convolution_filter_0 |     1|
+|14    |design_1_gray2rgb_0           |     1|
+|15    |design_1_ov7670_LUMA_CHROMA_0 |     1|
+|16    |design_1_ov7670_interface_0   |     1|
+|17    |design_1_proc_sys_reset_0     |     2|
+|19    |design_1_processing_system7_0 |     1|
+|20    |design_1_rgb2dvi_0            |     1|
+|21    |design_1_rst_ps7_0_100M       |     1|
+|22    |design_1_scaleImage_0         |     1|
+|23    |design_1_smartconnect_0       |     1|
+|24    |design_1_v_axi4s_vid_out_0    |     1|
+|25    |design_1_v_tc_0               |     1|
+|26    |design_1_xbar                 |     1|
+|27    |IBUF                          |    12|
+|28    |IOBUF                         |     2|
+|29    |OBUF                          |     5|
 +------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2360.316 ; gain = 602.312 ; free physical = 668 ; free virtual = 9648
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2356.438 ; gain = 596.375 ; free physical = 199 ; free virtual = 8783
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2360.316 ; gain = 516.465 ; free physical = 667 ; free virtual = 9647
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2360.316 ; gain = 602.312 ; free physical = 667 ; free virtual = 9647
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2356.438 ; gain = 512.496 ; free physical = 192 ; free virtual = 8778
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2356.438 ; gain = 596.375 ; free physical = 192 ; free virtual = 8778
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2360.316 ; gain = 0.000 ; free physical = 957 ; free virtual = 9937
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2356.438 ; gain = 0.000 ; free physical = 464 ; free virtual = 9053
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2360.316 ; gain = 0.000 ; free physical = 959 ; free virtual = 9939
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2356.438 ; gain = 0.000 ; free physical = 415 ; free virtual = 9003
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
-Synth Design complete | Checksum: c4c03178
+Synth Design complete | Checksum: b5ea5ac6
 INFO: [Common 17-83] Releasing license: Synthesis
-115 Infos, 209 Warnings, 0 Critical Warnings and 0 Errors encountered.
+119 Infos, 209 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:28 . Memory (MB): peak = 2360.316 ; gain = 978.656 ; free physical = 956 ; free virtual = 9936
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2060.642; main = 1753.263; forked = 413.013
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3317.438; main = 2328.270; forked = 989.168
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2360.316 ; gain = 0.000 ; free physical = 956 ; free virtual = 9936
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:28 . Memory (MB): peak = 2356.438 ; gain = 974.719 ; free physical = 415 ; free virtual = 9014
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1974.050; main = 1638.254; forked = 384.860
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3313.555; main = 2324.391; forked = 989.164
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2356.438 ; gain = 0.000 ; free physical = 405 ; free virtual = 9006
 INFO: [Common 17-1381] The checkpoint '/home/adrian/github_repos/OV7670-PynqZ2/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 25 16:27:11 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 26 14:42:35 2024...

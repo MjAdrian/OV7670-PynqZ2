@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date             : Thu Apr 25 16:31:27 2024
+| Date             : Fri Apr 26 14:47:23 2024
 | Host             : adrian running 64-bit Ubuntu 20.04.6 LTS
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.923        |
+| Total On-Chip Power (W)  | 1.928        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.768        |
+| Dynamic (W)              | 1.773        |
 | Device Static (W)        | 0.155        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 62.8         |
@@ -52,25 +52,25 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.051 |       11 |       --- |             --- |
-| Slice Logic              |     0.024 |    37132 |       --- |             --- |
-|   LUT as Logic           |     0.020 |    13003 |     53200 |           24.44 |
-|   CARRY4                 |     0.002 |     1503 |     13300 |           11.30 |
-|   Register               |     0.001 |    16696 |    106400 |           15.69 |
+| Clocks                   |     0.052 |       11 |       --- |             --- |
+| Slice Logic              |     0.025 |    39760 |       --- |             --- |
+|   LUT as Logic           |     0.020 |    14709 |     53200 |           27.65 |
+|   CARRY4                 |     0.002 |     1813 |     13300 |           13.63 |
+|   Register               |     0.001 |    16852 |    106400 |           15.84 |
 |   LUT as Distributed RAM |    <0.001 |      454 |     17400 |            2.61 |
 |   LUT as Shift Register  |    <0.001 |      374 |     17400 |            2.15 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   F7/F8 Muxes            |    <0.001 |       26 |     53200 |            0.05 |
-|   Others                 |     0.000 |     1115 |       --- |             --- |
-| Signals                  |     0.035 |    28591 |       --- |             --- |
+|   Others                 |     0.000 |     1120 |       --- |             --- |
+| Signals                  |     0.037 |    31074 |       --- |             --- |
 | Block RAM                |     0.010 |     12.5 |       140 |            8.93 |
 | MMCM                     |     0.103 |        1 |         4 |           25.00 |
 | PLL                      |     0.094 |        1 |         4 |           25.00 |
-| DSPs                     |     0.060 |       69 |       220 |           31.36 |
-| I/O                      |     0.135 |       26 |       125 |           20.80 |
+| DSPs                     |     0.060 |       73 |       220 |           33.18 |
+| I/O                      |     0.136 |       27 |       125 |           21.60 |
 | PS7                      |     1.256 |        1 |       --- |             --- |
 | Static Power             |     0.155 |          |           |                 |
-| Total                    |     1.923 |          |           |                 |
+| Total                    |     1.928 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -80,7 +80,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.205 |       0.187 |      0.017 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.209 |       0.192 |      0.017 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.122 |       0.106 |      0.016 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.041 |       0.040 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
@@ -164,28 +164,29 @@ Table of Contents
 +------------------------------+-----------+
 | Name                         | Power (W) |
 +------------------------------+-----------+
-| design_1_wrapper             |     1.768 |
-|   design_1_i                 |     1.765 |
+| design_1_wrapper             |     1.773 |
+|   design_1_i                 |     1.769 |
 |     AXI2DVI                  |     0.232 |
 |       axi4s_vid_out          |     0.002 |
 |       rgb2dvi                |     0.229 |
 |     OV7670_GRAYSCALE_TO_AXIS |     0.003 |
 |       axis_data_fifo         |     0.002 |
 |     VDMA                     |     0.043 |
-|       axi_vdma               |     0.020 |
+|       axi_vdma               |     0.021 |
 |       smartconnect           |     0.023 |
 |     axi_iic                  |     0.002 |
 |       U0                     |     0.002 |
 |     clk_wiz                  |     0.103 |
 |       inst                   |     0.103 |
-|     filter                   |     0.120 |
+|     filter                   |     0.122 |
 |       convolution_filter     |     0.078 |
 |       gray2rgb               |     0.002 |
-|       scaleImage             |     0.040 |
-|     processing_system7       |     1.257 |
-|       inst                   |     1.257 |
-|     ps7_0_axi_periph         |     0.004 |
+|       scaleImage             |     0.042 |
+|     processing_system7       |     1.258 |
+|       inst                   |     1.258 |
+|     ps7_0_axi_periph         |     0.005 |
 |       s00_couplers           |     0.003 |
+|       xbar                   |     0.001 |
 +------------------------------+-----------+
 
 

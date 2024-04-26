@@ -244,6 +244,24 @@
             },
             "V6": {
                 "VT": "AC",
+                "BA": "0x40001000",
+                "HA": "0x40001FFF",
+                "BP": "C_BASEADDR",
+                "HP": "C_HIGHADDR",
+                "MA": "Data",
+                "MX": "/processing_system7",
+                "MI": "M_AXI_GP0",
+                "MS": "SEG_PWM_Kotha_v1_0_1_reg0",
+                "MV": "xilinx.com:ip:processing_system7:5.5",
+                "SX": "/PWM_Kotha_v1_0_1",
+                "SI": "s00_axi",
+                "SS": "reg0",
+                "SV": "user.org:user:PWM_Kotha_v1_0:1.0",
+                "TM": "both",
+                "TU": "register"
+            },
+            "V7": {
+                "VT": "AC",
                 "BA": "0x41200000",
                 "HA": "0x4120FFFF",
                 "BP": "C_BASEADDR",
@@ -260,7 +278,7 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V7": {
+            "V8": {
                 "VT": "AC",
                 "BA": "0x41600000",
                 "HA": "0x4160FFFF",
@@ -278,7 +296,7 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V8": {
+            "V9": {
                 "VT": "AC",
                 "BA": "0x41800000",
                 "HA": "0x4180FFFF",
@@ -297,7 +315,7 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V9": {
+            "V10": {
                 "VT": "AC",
                 "BA": "0x43000000",
                 "HA": "0x4300FFFF",
@@ -315,7 +333,7 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V10": {
+            "V11": {
                 "VT": "AC",
                 "BA": "0x43C10000",
                 "HA": "0x43C1FFFF",
@@ -380,6 +398,11 @@
             },
             {
                 "src": "V10",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V11",
                 "trg": "V2",
                 "EH": "2"
             }
